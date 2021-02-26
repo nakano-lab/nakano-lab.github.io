@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | 中野研</title>
+    <link>https://nakano-lab.github.io/project/</link>
+      <atom:link href="https://nakano-lab.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://nakano-lab.github.io/images/logo_hu37bd1c4e7eb69b36bf2a32232c3c8454_242591_300x300_fit_lanczos_2.png</url>
+      <title>Projects</title>
+      <link>https://nakano-lab.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>うつ病の診断・層別化手法の開発</title>
+      <link>https://nakano-lab.github.io/project/depression/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/project/depression/</guid>
+      <description>&lt;p&gt;機械学習を用いたうつ病の診断・層別化では奈良先端科学技術大学院大学吉本潤一郎准教授（情報科学）、広島大学医学部山脇成人教授（精神医学）らや九州大学医学部加藤隆弘講師（精神医学）らと協力してうつ病患者・健常者数百人から得られた安静時脳機能画像（fMRI）データおよび血液データからなるマルチモーダルデータに対して機械学習による解析を行うことで、うつ病の診断やうつ病のサブタイプを分類する層別化に取り組んでいる。
+これまでの研究では、うつ病の診断の施設汎化性の向上やうつ病率と治療応答性の異なる患者クラスタの同定に成功した(Nakano et al., 投稿中、Nakano et al., 投稿準備中)。&lt;/p&gt;
+&lt;p&gt;さらにfMRI撮像中に被験者に脳活動を制御してもらうニューロフィードバックを用いた新しいうつ病の治療法の開発にも取り組んでいる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>リポソームを用いた薬物投与法の開発</title>
+      <link>https://nakano-lab.github.io/project/liposome/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/project/liposome/</guid>
+      <description>&lt;p&gt;リポソームとフェムト秒レーザを用いた新しい薬物投与法を開発しました。この手法は幅広い薬剤に対応し、薬物の投与量と投与の時間パターンを任意にコントロールすることができます。またこの手法を用いて神経活動を任意に操作できることを実証しました(Nakano et al. 2014, Nakano et al. 2016)。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>強化学習モデリング</title>
+      <link>https://nakano-lab.github.io/project/rl-modeling/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/project/rl-modeling/</guid>
+      <description>&lt;p&gt;得られる報酬を最大化するような行動を獲得する学習である強化学習といい、大脳基底核がその実行に関係していると考えられている。神経細胞を模したスパイキングニューラルネットワークを用いて実際の神経回路をモデル化するすることで、強化学習の脳内実装機構の理解を目指している。&lt;/p&gt;
+&lt;p&gt;これまでの研究では、自由エネルギーを利用した強化学習アルゴリズムを、神経細胞を模したノードからなる神経ネットワーク（右図）上に実装し、部分観測環境下での学習に成功した。神経細胞を模した神経ネットワークモデルでは初めて部分観測環境下での学習タスクを解くことのできるモデルとなった（Nakano et al., PLoS One, 2015）。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>神経モデリング</title>
+      <link>https://nakano-lab.github.io/project/neural-modeling/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/project/neural-modeling/</guid>
+      <description>&lt;p&gt;大脳基底核の線条体では、ドーパミン投射を受け、報酬予測や意思決定をおこなっていると考えられている。分子・細胞・神経細胞ネットワークといった複数の階層で生命現象のリアリスティックモデリングを行うことで、報酬学習や意思決定の神経機構を探っている。&lt;/p&gt;
+&lt;p&gt;これまでの研究では、ドーパミンによる直接路中型有棘神経細胞の興奮性やシナプス結合強度変化の修飾を実現する細胞内シグナル伝達経路のモデル化を行った。生化学実験データを用いてシミュレーションを行うことによってドーパミンがリン酸化酵素や基質からなる細胞内分子ネットワークを活性化することを明らかにし、 報酬予測を実現する分子機構を予測した（Nakano et al., PLoS Computational Biology, 2010）。またドーパミンとアデノシンが大脳基底核の出力を制御している分子機構をモデルによって提案し、実験研究とともにドーパミンシグナルの分子機構の解明に取り組んだ（Zhang et al., Neurochemistry International, 2018）。&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;figure  &gt;
+    &lt;img alt=&#34;&#34; srcset=&#34;
+           /project/neural-modeling/featured2_hu23d1828d0329271385a35e4b6ded0700_11445_0d56b0091751a704b17489b27b4170c0.png 400w,
+           /project/neural-modeling/featured2_hu23d1828d0329271385a35e4b6ded0700_11445_7c98a46c856b1ded9764be7575700768.png 760w,
+           /project/neural-modeling/featured2_hu23d1828d0329271385a35e4b6ded0700_11445_1200x1200_fit_lanczos_2.png 1200w&#34;
+           src=&#34;https://nakano-lab.github.io/project/neural-modeling/featured2_hu23d1828d0329271385a35e4b6ded0700_11445_0d56b0091751a704b17489b27b4170c0.png&#34;
+           width=&#34;199&#34;
+           height=&#34;136&#34;
+           loading=&#34;lazy&#34;
+           data-zoomable /&gt;
+    
+&lt;/figure&gt;
+
+&lt;p&gt;また、イオンチャネルや受容体を組み入れた直接路中型有棘神経細胞のマルチコンパートモデルを構築した。実験から取得した神経細胞の形態データおよび電気生理学実験データを用いて、細胞の各部位でのドーパミンの時間差入力に依存する電気生理学的振る舞いを予測した（Nakano et al., Frontiers in Computational Neuroscience, 2013）。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>神経情報解析</title>
+      <link>https://nakano-lab.github.io/project/neural-analysis/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/project/neural-analysis/</guid>
+      <description>&lt;p&gt;様々な大学と共同研究を行い生理学・医学データ、特にヒトやマウスの強化学習課題時における行動解析や神経データ解析を行っている。&lt;/p&gt;
+&lt;p&gt;これまでの研究では、ヒト研究ではストレスを回避する強化学習の行動解析と脳機能画像データ解析を行いストレス回避に関連する神経回路の推定を行った（Yoshino et al., 投稿中）。
+マウス研究では線条体ChIの生体内電気生理学データの解析を行いChIとMSNの相互作用を調べた（Zucca et al., eLife, 2018）。
+さらに強化学習に関連したマウス行動解析を行い、報酬と洞毛運動の関係の解明や、神経活動の遠隔操作手法の開発に携わっている（Matsubara et al., BioRxiv 2019; Mizutani, Nakano et al., 投稿準備中）。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>神経生物学実験</title>
+      <link>https://nakano-lab.github.io/project/experiments/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/project/experiments/</guid>
+      <description>&lt;p&gt;これまで光遺伝学やパッチクランプ法などを利用した電気生理学、電気化学実験を行い、学習や意思決定におけるドーパミンの役割について調べてきました (Nagai et al. 2016, Nakano et al. 2016)。また実験データをもとにしたモデル構築やモデルの検証を行なっています。&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;figure  &gt;
+    &lt;img alt=&#34;&#34; srcset=&#34;
+           /project/experiments/setup_hu96a15e29d3ca8f32bb541cd4451ad667_134015_959620826cd479a098c264cdb33d648d.png 400w,
+           /project/experiments/setup_hu96a15e29d3ca8f32bb541cd4451ad667_134015_d7b301e26ced1ee8c5dad15447a7550c.png 760w,
+           /project/experiments/setup_hu96a15e29d3ca8f32bb541cd4451ad667_134015_1200x1200_fit_lanczos_2.png 1200w&#34;
+           src=&#34;https://nakano-lab.github.io/project/experiments/setup_hu96a15e29d3ca8f32bb541cd4451ad667_134015_959620826cd479a098c264cdb33d648d.png&#34;
+           width=&#34;319&#34;
+           height=&#34;239&#34;
+           loading=&#34;lazy&#34;
+           data-zoomable /&gt;
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>femtosecond laser | 中野研</title>
+    <link>https://nakano-lab.github.io/tag/femtosecond-laser/</link>
+      <atom:link href="https://nakano-lab.github.io/tag/femtosecond-laser/index.xml" rel="self" type="application/rss+xml" />
+    <description>femtosecond laser</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://nakano-lab.github.io/images/logo_hu37bd1c4e7eb69b36bf2a32232c3c8454_242591_300x300_fit_lanczos_2.png</url>
+      <title>femtosecond laser</title>
+      <link>https://nakano-lab.github.io/tag/femtosecond-laser/</link>
+    </image>
+    
+    <item>
+      <title>リポソームを用いた薬物投与法の開発</title>
+      <link>https://nakano-lab.github.io/project/liposome/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/project/liposome/</guid>
+      <description>&lt;p&gt;リポソームとフェムト秒レーザを用いた新しい薬物投与法を開発しました。この手法は幅広い薬剤に対応し、薬物の投与量と投与の時間パターンを任意にコントロールすることができます。またこの手法を用いて神経活動を任意に操作できることを実証しました(Nakano et al. 2014, Nakano et al. 2016)。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine learning | 中野研</title>
+    <link>https://nakano-lab.github.io/tag/machine-learning/</link>
+      <atom:link href="https://nakano-lab.github.io/tag/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Machine learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://nakano-lab.github.io/images/logo_hu37bd1c4e7eb69b36bf2a32232c3c8454_242591_300x300_fit_lanczos_2.png</url>
+      <title>Machine learning</title>
+      <link>https://nakano-lab.github.io/tag/machine-learning/</link>
+    </image>
+    
+    <item>
+      <title>うつ病の診断・層別化手法の開発</title>
+      <link>https://nakano-lab.github.io/project/depression/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/project/depression/</guid>
+      <description>&lt;p&gt;機械学習を用いたうつ病の診断・層別化では奈良先端科学技術大学院大学吉本潤一郎准教授（情報科学）、広島大学医学部山脇成人教授（精神医学）らや九州大学医学部加藤隆弘講師（精神医学）らと協力してうつ病患者・健常者数百人から得られた安静時脳機能画像（fMRI）データおよび血液データからなるマルチモーダルデータに対して機械学習による解析を行うことで、うつ病の診断やうつ病のサブタイプを分類する層別化に取り組んでいる。
+これまでの研究では、うつ病の診断の施設汎化性の向上やうつ病率と治療応答性の異なる患者クラスタの同定に成功した(Nakano et al., 投稿中、Nakano et al., 投稿準備中)。&lt;/p&gt;
+&lt;p&gt;さらにfMRI撮像中に被験者に脳活動を制御してもらうニューロフィードバックを用いた新しいうつ病の治療法の開発にも取り組んでいる。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

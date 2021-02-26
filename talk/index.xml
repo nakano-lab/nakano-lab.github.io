@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks | 中野研</title>
+    <link>https://nakano-lab.github.io/talk/</link>
+      <atom:link href="https://nakano-lab.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright>
+    <image>
+      <url>https://nakano-lab.github.io/images/logo_hu37bd1c4e7eb69b36bf2a32232c3c8454_242591_300x300_fit_lanczos_2.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://nakano-lab.github.io/talk/</link>
+    </image>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>https://nakano-lab.github.io/talk/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/talk/conference-paper/</guid>
+      <description>&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

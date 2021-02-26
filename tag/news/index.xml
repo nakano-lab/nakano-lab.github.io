@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News | 中野研</title>
+    <link>https://nakano-lab.github.io/tag/news/</link>
+      <atom:link href="https://nakano-lab.github.io/tag/news/index.xml" rel="self" type="application/rss+xml" />
+    <description>News</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright><lastBuildDate>Fri, 26 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://nakano-lab.github.io/images/logo_hu37bd1c4e7eb69b36bf2a32232c3c8454_242591_300x300_fit_lanczos_2.png</url>
+      <title>News</title>
+      <link>https://nakano-lab.github.io/tag/news/</link>
+    </image>
+    
+    <item>
+      <title>2021年2月26日　うつ様行動とキヌレニンに関する論文が公開されました。</title>
+      <link>https://nakano-lab.github.io/post/20210226/</link>
+      <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/post/20210226/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2021年2月12日　ニューロフィードバック適性予測のプレプリントが公開されました。</title>
+      <link>https://nakano-lab.github.io/post/20210212/</link>
+      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/post/20210212/</guid>
+      <description>&lt;p&gt;ニューロフィードバック適性予測に関するプレプリントがbioRxivで公開されました。&lt;/p&gt;
+&lt;p&gt;Resting-state brain activity can predict target-independent aptitude in fMRI-neurofeedback training&lt;/p&gt;
+&lt;p&gt;Takashi Nakano, Masahiro Takamura, Haruki Nishimura, Maro Machizawa, Naho Ichikawa, Atsuo Yoshino, Go Okada, Yasumasa Okamoto, Shigeto Yamawaki, Makiko Yamada, Tetsuya Suhara, Junichiro Yoshimoto&lt;/p&gt;
+&lt;p&gt;bioRxiv&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://doi.org/10.1101/2021.02.08.430334&#34;&gt;https://doi.org/10.1101/2021.02.08.430334&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2020年9月24日　ストレスとドーパミンに関する論文が掲載されました。</title>
+      <link>https://nakano-lab.github.io/post/20200924/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/post/20200924/</guid>
+      <description>&lt;p&gt;ストレスに対処するときのドーパミンの役割を調べた論文がJournal of Neuroscienceに掲載されました。&lt;/p&gt;
+&lt;p&gt;Dopaminergic Signaling in the Nucleus Accumbens Modulates Stress-Coping Strategies during Inescapable Stress
+Wanpeng Cui, Tomomi Aida, Hikaru Ito, Kenta Kobayashi, Yusaku Wada, Shigeki Kato, Takashi Nakano, Meina Zhu, Kaoru Isa, Kazuto Kobayashi, Tadashi Isa, Kohichi Tanaka, Hidenori Aizawa
+Journal of Neuroscience 16 September 2020, 40 (38) 7241-7254; DOI: 10.1523/JNEUROSCI.0444-20.2020&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2020年5月28日　うつ病に関する論文が2報公開されました。</title>
+      <link>https://nakano-lab.github.io/post/20200528/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/post/20200528/</guid>
+      <description>&lt;p&gt;resting fMRIを用いたうつ病に関わる論文が2報アクセプトされました。&lt;/p&gt;
+&lt;p&gt;Nakano T, Takamura M, Ichikawa N, Okada G, Okamoto Y, Yamata M, Suhara T, Yamawaki S, Yoshimoto J: Enhancing multi-center generalization of machine-learning based depression diagnosis from resting-state fMRI., Frontiers in Psychiatry, 11: 400, 2020.
+&lt;a href=&#34;https://www.frontiersin.org/articles/10.3389/fpsyt.2020.00400/full&#34;&gt;https://www.frontiersin.org/articles/10.3389/fpsyt.2020.00400/full&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yoshino A, Okamoto Y, Sumiya Y, Okada G, Takamura M, Ichikawa N, Nakano T, Shibasaki C, Aizawa H, Yamawaki, Y, Kawakami K, Yokoyama S, Yamawaki, S: Importance of the habenula for avoidance learning including contextual cues in the human brain: A preliminary fMRI study, Frontiers in Human Neuroscience, 14: 165, 2020.
+&lt;a href=&#34;https://www.frontiersin.org/articles/10.3389/fnhum.2020.00165/full&#34;&gt;https://www.frontiersin.org/articles/10.3389/fnhum.2020.00165/full&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2020年4月20日　うつ病に関する論文が2報アクセプトされました。</title>
+      <link>https://nakano-lab.github.io/post/20200420/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/post/20200420/</guid>
+      <description>&lt;p&gt;resting fMRIを用いたうつ病に関わる論文が2報アクセプトされました。&lt;/p&gt;
+&lt;p&gt;Yoshino A, Okamoto Y, Sumiya Y, Okada G, Takamura M, Ichikawa N, Nakano T, Shibasaki C, Aizawa H, Yamawaki, Y, Kawakami K, Yokoyama S, Yamawaki, S: Importance of the habenula for avoidance learning including contextual cues in the human brain: A preliminary fMRI study, Frontiers in Human Neuroscience.&lt;/p&gt;
+&lt;p&gt;Nakano T, Takamura M, Ichikawa N, Okada G, Okamoto Y, Yamata M, Suhara T, Yamawaki S, Yoshimoto J: Enhancing multi-center generalization of machine-learning based depression diagnosis from resting-state fMRI., Frontiers in Psychiatry.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2020年4月1日　中野准教授が着任し中野研究室が発足しました</title>
+      <link>https://nakano-lab.github.io/post/20200401/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/post/20200401/</guid>
+      <description>&lt;p&gt;今後ともよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

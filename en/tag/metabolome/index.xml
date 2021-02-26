@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metabolome | Nakano Lab</title>
+    <link>https://nakano-lab.github.io/en/tag/metabolome/</link>
+      <atom:link href="https://nakano-lab.github.io/en/tag/metabolome/index.xml" rel="self" type="application/rss+xml" />
+    <description>Metabolome</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://nakano-lab.github.io/images/logo_hu37bd1c4e7eb69b36bf2a32232c3c8454_242591_300x300_fit_lanczos_2.png</url>
+      <title>Metabolome</title>
+      <link>https://nakano-lab.github.io/en/tag/metabolome/</link>
+    </image>
+    
+    <item>
+      <title>Diagnosis of depression using machine learning</title>
+      <link>https://nakano-lab.github.io/en/project/depression/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/en/project/depression/</guid>
+      <description>&lt;p&gt;We are applying machine learning to multimodal data of neural activity and blood samples from depressive patients.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
