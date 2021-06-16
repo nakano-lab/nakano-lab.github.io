@@ -5,7 +5,7 @@
     <link>https://nakano-lab.github.io/tag/news/</link>
       <atom:link href="https://nakano-lab.github.io/tag/news/index.xml" rel="self" type="application/rss+xml" />
     <description>News</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright><lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright><lastBuildDate>Wed, 16 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://nakano-lab.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>News</title>
@@ -13,7 +13,15 @@
     </image>
     
     <item>
-      <title>2021年5月11日　本が出版されます。</title>
+      <title>書籍「次世代医療AI」が発売されました。</title>
+      <link>https://nakano-lab.github.io/post/20210616/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://nakano-lab.github.io/post/20210616/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2021年5月11日　本を書きました（共著）。</title>
       <link>https://nakano-lab.github.io/post/20210511/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       <guid>https://nakano-lab.github.io/post/20210511/</guid>
