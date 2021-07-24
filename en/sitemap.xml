@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nakano-lab.github.io/en/post/20210401/</loc>
-    <lastmod>2021-04-01T09:39:10+09:00</lastmod>
+    <loc>https://nakano-lab.github.io/en/post/20210722/</loc>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://nakano-lab.github.io/post/20210401/"
+                href="https://nakano-lab.github.io/post/20210722/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://nakano-lab.github.io/en/post/20210401/"
+                href="https://nakano-lab.github.io/en/post/20210722/"
                 />
   </url><url>
     <loc>https://nakano-lab.github.io/en/</loc>
-    <lastmod>2021-04-01T09:39:10+09:00</lastmod>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://nakano-lab.github.io/en/tag/news/</loc>
-    <lastmod>2021-04-01T09:39:10+09:00</lastmod>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://nakano-lab.github.io/en/tags/</loc>
-    <lastmod>2021-04-01T09:39:10+09:00</lastmod>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -52,6 +52,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://nakano-lab.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://nakano-lab.github.io/en/post/20210401/</loc>
+    <lastmod>2021-04-01T09:39:10+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://nakano-lab.github.io/post/20210401/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nakano-lab.github.io/en/post/20210401/"
                 />
   </url><url>
     <loc>https://nakano-lab.github.io/en/post/20210226/</loc>
