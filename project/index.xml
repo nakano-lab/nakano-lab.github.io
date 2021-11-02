@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | 中野研</title>
+    <title>Projects | 中野高志ウェブサイト</title>
     <link>https://nakano-lab.github.io/project/</link>
       <atom:link href="https://nakano-lab.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Nakano Lab 2021 All Rights Reserved.</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-JP</language><copyright>© Takashi Nakano 2021 All Rights Reserved.</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://nakano-lab.github.io/media/logo_hu234322f251d2ebfd631687cc1ec0adf2_272118_300x300_fit_lanczos_2.png</url>
       <title>Projects</title>
