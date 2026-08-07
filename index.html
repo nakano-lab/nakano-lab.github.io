@@ -1,26 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="5;URL=https://sites.google.com/view/fhu-nakano-lab/">
-<title>Nakano lab website has been moved</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nakano Lab Software — research-driven apps for everyday work.">
+  <title>Nakano Lab Software</title>
+  <link rel="icon" href="/assets/images/wayaknow/icon.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>
+    (function () {
+      var language;
+      try { language = localStorage.getItem("nakano-lab-site-language"); } catch (_) {}
+      if (language !== "ja" && language !== "en") {
+        language = navigator.language && navigator.language.toLowerCase().startsWith("ja") ? "ja" : "en";
+      }
+      location.replace("/" + language + "/");
+    })();
+  </script>
 </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WGG0H4V0H0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WGG0H4V0H0');
-</script>
-  
 <body>
-<h1>Redirect</h1>
-<p>このサイトは移転しました<br>
-ジャンプしない場合は、以下のURLをクリックしてください。</p>
-<p>Nakano lab website has been moved.<br>
-Please click on the following link.</p>
-<p><a href="https://sites.google.com/view/fhu-nakano-lab/">https://sites.google.com/view/fhu-nakano-lab/</a></p>
+  <main class="container page-hero">
+    <p class="eyebrow">Nakano Lab Software</p>
+    <h1 class="section-title">言語を選択してください<br>Please choose a language</h1>
+    <div class="button-row">
+      <a class="button primary" href="/ja/">日本語</a>
+      <a class="button" href="/en/">English</a>
+    </div>
+  </main>
 </body>
 </html>
