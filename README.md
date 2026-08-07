@@ -10,14 +10,15 @@ GitHub Pagesで公開する、日英対応のソフトウェア紹介サイト�
 ## 現在のページ
 
 - wayaknow: 紹介、サポート、プライバシーポリシー、利用規約
+- Hashleaf: 日本語・英語の紹介ページ、App Storeリンク
 - CODO Monitor: 紹介、ダウンロード、マニュアル
 - CODO Review: 紹介、ダウンロード
-- App 04／App 05: 今後のアプリ用プレースホルダー（検索対象外）
+- App 05: 今後のアプリ用プレースホルダー（検索対象外）
 
 ## 新しいアプリを追加する
 
-1. `ja/apps/app-4/index.html`と`en/apps/app-4/index.html`を正式な内容へ置き換えます。
-2. 日本語・英語トップの`App 04`カードを、アプリ名・説明・対応OSへ変更します。
+1. `ja/apps/app-5/index.html`と`en/apps/app-5/index.html`を正式な内容へ置き換えます。
+2. 日本語・英語トップの`App 05`カードを、アプリ名・説明・対応OSへ変更します。
 3. 画像を`assets/images/<app-name>/`へ追加します。
 4. 正式公開ページを`sitemap.xml`へ追加し、ページの`noindex`を削除します。
 5. 日本語ページと英語ページの相互リンクが同じ内容へ移動することを確認します。
@@ -31,6 +32,12 @@ GitHub Pagesで公開する、日英対応のソフトウェア紹介サイト�
 - 利用規約: `https://nakano-lab.github.io/ja/apps/wayaknow/terms/`
 
 App Store Connectとwayaknowアプリ内のURLは、公開後に上記へ変更してください。
+
+## Hashleafの公開URL
+
+- 紹介（日本語）: `https://nakano-lab.github.io/ja/apps/hashleaf/`
+- 紹介（英語）: `https://nakano-lab.github.io/en/apps/hashleaf/`
+- App Store: `https://apps.apple.com/us/app/hashleaf/id6794256173`
 
 ## ローカル確認
 
