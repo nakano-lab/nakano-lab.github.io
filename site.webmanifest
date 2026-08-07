@@ -1,0 +1,11 @@
+{
+  "name": "Nakano Lab Software",
+  "short_name": "Nakano Software",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffdfb",
+  "theme_color": "#c80019",
+  "icons": [
+    { "src": "/assets/images/wayaknow/icon.png", "sizes": "1024x1024", "type": "image/png" }
+  ]
+}
