@@ -38,6 +38,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -236,6 +237,81 @@ button:focus-visible {
   min-height: 430px;
   display: grid;
   place-items: center;
+}
+
+.hero-collection {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 12px;
+  min-height: 420px;
+  padding: 34px 22px;
+  border: 1px solid rgba(52, 31, 39, 0.08);
+  border-radius: 38px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(61, 85, 165, 0.09), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(200, 0, 25, 0.08), transparent 44%),
+    rgba(255, 255, 255, 0.55);
+  box-shadow: var(--shadow);
+}
+
+.hero-collection::after {
+  content: "";
+  position: absolute;
+  right: 28px;
+  bottom: 24px;
+  left: 28px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(52, 31, 39, 0.16), transparent);
+}
+
+.collection-card {
+  min-width: 0;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 16px;
+  border: 1px solid rgba(52, 31, 39, 0.1);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 38px rgba(53, 28, 36, 0.09);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.collection-card:nth-child(1) { transform: translateY(15px) rotate(-2deg); }
+.collection-card:nth-child(2) { transform: translateY(-13px); }
+.collection-card:nth-child(3) { transform: translateY(13px) rotate(2deg); }
+
+.collection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 48px rgba(53, 28, 36, 0.14);
+}
+
+.collection-card img,
+.collection-card .symbol-icon {
+  width: 54px;
+  height: 54px;
+  margin-bottom: auto;
+  border-radius: 15px;
+}
+
+.collection-card strong {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(0.85rem, 1.4vw, 1.04rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.collection-card small {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.69rem;
+  line-height: 1.4;
 }
 
 .hero-orbit::before,
@@ -543,6 +619,8 @@ button:focus-visible {
 
 .shot img {
   width: 100%;
+  height: auto;
+  object-fit: contain;
   border: 1px solid var(--line);
   border-radius: 24px;
   background: white;
@@ -768,6 +846,24 @@ button:focus-visible {
   .language-link { padding: 7px 10px; }
   .display { font-size: clamp(3rem, 16vw, 5rem); }
   .hero-orbit { min-height: 330px; }
+  .hero-collection {
+    min-height: 320px;
+    padding: 28px 14px;
+    border-radius: 28px;
+  }
+  .collection-card {
+    min-height: 185px;
+    padding: 12px;
+    border-radius: 19px;
+  }
+  .collection-card img,
+  .collection-card .symbol-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    font-size: 0.74rem;
+  }
+  .collection-card small { display: none; }
   .hero-orbit::before { width: 320px; height: 320px; }
   .hero-orbit::after { width: 235px; height: 235px; }
   .orbit-pill { font-size: 0.7rem; }
