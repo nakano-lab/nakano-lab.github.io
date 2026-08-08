@@ -22,9 +22,15 @@
     <nav class="nav-wrap" aria-label="メインナビゲーション">
       <a class="brand" href="/ja/"><span class="brand-mark">N</span><span>Nakano Lab Software</span></a>
       <div class="nav-links">
-        <a href="#apps">アプリ</a>
-        <a href="/ja/apps/wayaknow/support/">サポート</a>
-        <a href="https://github.com/nakano-lab" rel="external">GitHub</a>
+        <div class="nav-menu">
+          <button class="nav-menu-trigger" type="button" aria-haspopup="true">アプリ</button>
+          <div class="nav-submenu">
+            <a href="/ja/apps/wayaknow/">wayaknow</a>
+            <a href="/ja/apps/hashleaf/">Hashleaf</a>
+            <a href="/ja/apps/codo-monitor/">CODO Monitor</a>
+            <a href="/ja/apps/codo-review/">CODO Review</a>
+          </div>
+        </div>
         <a class="language-link" href="/en/" lang="en" data-language-link="en">EN</a>
       </div>
     </nav>
@@ -52,7 +58,7 @@
         <div class="section-head reveal">
           <p class="eyebrow">Apps</p>
           <h2 class="section-title">目的に合う、小さく強いソフトウェア。</h2>
-          <p class="section-copy">現在公開中・配布中のアプリと、これから追加するアプリをご案内します。</p>
+          <p class="section-copy">現在公開中・配布中のアプリをご案内します。</p>
         </div>
         <div class="app-grid">
           <a class="app-card reveal" href="/ja/apps/wayaknow/">
@@ -88,19 +94,7 @@
             <span class="card-link">詳しく見る <span aria-hidden="true">↗</span></span>
           </a>
 
-          <a class="app-card placeholder reveal" href="/ja/apps/app-5/">
-            <div class="card-top"><span class="symbol-icon muted" aria-hidden="true">＋</span><div><p class="card-kicker">Coming soon</p><h3 class="card-title">App 05</h3></div></div>
-            <p class="card-copy">今後のアプリを同じデザインで追加できます。素材が決まり次第、この枠を置き換えます。</p>
-            <span class="card-link">準備中のページへ <span aria-hidden="true">↗</span></span>
-          </a>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split">
-        <div class="info-card reveal"><p class="eyebrow">Built with purpose</p><h3>必要な機能を、分かりやすく。</h3><p>専門的な処理を、日々の仕事で使える形に整えることを大切にしています。</p></div>
-        <div class="info-card reveal"><p class="eyebrow">Support</p><h3>使い方とデータの扱いを明確に。</h3><p>アプリごとにサポート情報とプライバシー方針を公開します。</p></div>
       </div>
     </section>
   </main>
@@ -108,7 +102,6 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <p class="footer-copy">© <span data-current-year>2026</span> Takashi Nakano. All rights reserved.</p>
-      <div class="footer-links"><a href="/ja/apps/wayaknow/support/">サポート</a><a href="/ja/apps/wayaknow/privacy/">プライバシー</a><a href="/ja/apps/wayaknow/terms/">利用規約</a></div>
     </div>
   </footer>
   <script src="/assets/js/site.js" defer></script>
