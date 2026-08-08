@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hashleaf system requirements, getting started guide, image and math troubleshooting, Quick Look, PDF export, Hashleaf Pro, and contact information.">
+  <title>Hashleaf Support</title>
+  <link rel="canonical" href="https://nakano-lab.github.io/en/apps/hashleaf/support/">
+  <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/hashleaf/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/hashleaf/support/">
+  <link rel="icon" href="/assets/images/hashleaf/icon.png"><link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation"><a class="brand" href="/en/"><span class="brand-mark">N</span><span>Nakano Lab Software</span></a><div class="nav-links"><a href="/en/apps/hashleaf/">Hashleaf</a><a href="/en/apps/hashleaf/privacy/">Privacy</a><a href="https://apps.apple.com/us/app/hashleaf/id6794256173" rel="external">App Store</a><a class="language-link" href="/ja/apps/hashleaf/support/" lang="ja" data-language-link="ja">日本語</a></div></nav></header>
+  <main id="main" class="container document-layout">
+    <aside class="doc-nav" aria-label="On this page"><strong>On this page</strong><a href="#requirements">Requirements</a><a href="#start">Getting started</a><a href="#images">Document images</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></aside>
+    <article class="document">
+      <p class="breadcrumbs"><a href="/en/">Nakano Lab Software</a> / <a href="/en/apps/hashleaf/">Hashleaf</a> / Support</p>
+      <h1>Hashleaf<br>Support</h1>
+      <p class="updated">Updated August 8, 2026</p>
+      <p>Hashleaf is a focused Markdown viewer for iPhone, iPad, and Mac. It displays headings, tables, code, math, and a table of contents, includes document search, and provides Finder Quick Look previews on Mac.</p>
+
+      <h2 id="requirements">System requirements</h2>
+      <ul><li>iPhone and iPad: iOS or iPadOS 17 or later</li><li>Mac: macOS 14 or later</li><li>Markdown extensions: <code>.md</code>, <code>.markdown</code>, and <code>.mdown</code></li><li>Text encodings: UTF-8, UTF-16, and Shift_JIS</li><li>Maximum Markdown file size: 10 MB</li></ul>
+      <p>The interface automatically follows your device’s preferred languages. Hashleaf supports English, Japanese, Korean, Simplified and Traditional Chinese, Spanish, French, German, Brazilian Portuguese, and Italian.</p>
+
+      <h2 id="start">Getting started</h2>
+      <h3>Open only a Markdown file</h3>
+      <ol><li>On the welcome screen, select Open Markdown File.</li><li>Choose a Markdown file in Files or Finder.</li><li>Use the toolbar or menu for the table of contents, search, text size, and sharing.</li></ol>
+      <p>With this method, Apple’s document picker grants access only to the selected Markdown file. Relative images and linked local files may remain inaccessible.</p>
+
+      <h3>Preview with Quick Look on Mac</h3>
+      <ol><li>Launch Hashleaf once.</li><li>Select a Markdown file in Finder.</li><li>Press the Space bar.</li></ol>
+      <p>Quick Look displays Markdown and rendered math. If macOS has not recognized the extension yet, quit and reopen Hashleaf and Finder.</p>
+
+      <h2 id="images">Display images used in a document</h2>
+      <p>When Markdown contains a relative reference such as <code>![Description](images/photo.png)</code>, use Hashleaf Pro, select Open with Document Images, and choose the folder where the Markdown file is stored. After selecting the Markdown inside that folder, Hashleaf can read the images and linked files referenced by the document.</p>
+      <p>Folder selection is required by iOS, iPadOS, and macOS security. Hashleaf does not sign in directly to Dropbox, Google Drive, OneDrive, or another storage service. A provider works when it appears in Files or Finder through File Provider and can download the required files to the device.</p>
+      <p>Hashleaf remembers an authorized folder on the device and reuses access when possible. You may need to select it again if the operating system or cloud provider revokes access or if the files are moved.</p>
+      <p>Image limits are 32 MB per image and 128 MB per document on iPhone and iPad, and 64 MB per image and 256 MB per document on Mac. Supported formats are PNG, JPEG, GIF, WebP, HEIC/HEIF, TIFF, BMP, AVIF, and SVG.</p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <h3>Images are not displayed</h3>
+      <ul><li>With Hashleaf Pro, use Open with Document Images and select the folder containing the Markdown file.</li><li>Check that the relative path, capitalization, extension, and actual filename match.</li><li>For security, files outside the selected folder cannot be read. Keep the Markdown and its referenced files in the same folder hierarchy.</li><li>If a cloud file shows a cloud icon, confirm that Files or Finder can download it.</li><li>Check the supported formats and size limits above.</li></ul>
+
+      <h3>Math is still displayed with <code>$$</code></h3>
+      <p>Write inline math as <code>$E = mc^2$</code>. Put <code>$$</code> before and after display math. Confirm that the opening and closing delimiters match and that the expression is not inside a code block. Math resources are bundled with Hashleaf and normally require no network connection.</p>
+
+      <h3>How do I search a document?</h3>
+      <p>Select Search. On Mac, you can also press Command-F. Search covers the currently displayed document.</p>
+
+      <h3>What happens when I select a link?</h3>
+      <p>Within an authorized folder, Markdown files open in Hashleaf, while folders and other files are passed to the operating system and opened by a compatible default app. Web, email, and telephone links also open in the corresponding system app.</p>
+
+      <h3>How do I export a PDF?</h3>
+      <p>On Mac, open the Markdown and choose Export as PDF from the menu. Hashleaf Pro is required. The displayed text, images, and math are saved as an A4 PDF in the location you select.</p>
+
+      <h3>Is Hashleaf Pro a subscription?</h3>
+      <p>No. Hashleaf Pro is a one-time In-App Purchase. On an iPhone, iPad, or Mac using the same Apple Account, select Restore Purchases. Pricing and purchase processing are managed by the App Store.</p>
+
+      <h3>The price will not load, or the purchase cannot be completed</h3>
+      <ul><li>Confirm that you are signed in to the App Store and connected to the internet.</li><li>Check Screen Time or managed-device restrictions for In-App Purchases.</li><li>Wait briefly, then select Reload Purchase Information or Restore Purchases.</li><li>If you already purchased Pro, use the same Apple Account that made the purchase.</li></ul>
+      <p>If the issue continues, contact us with a screenshot that hides personal information and include the device, OS, and Hashleaf version and build.</p>
+
+      <h3>Are my files sent to the developer?</h3>
+      <p>No. Selected Markdown, relative images, linked files, and generated PDFs are processed on your device. If a Markdown document embeds an image from a web URL, however, your device contacts that web server to load the image. See the <a href="/en/apps/hashleaf/privacy/">Privacy Policy</a> for details.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>When reporting a problem, do not include personal information or confidential document content. Please include the Hashleaf version and build; device and OS; storage location, such as On My Device, iCloud Drive, or Dropbox; steps leading to the issue; and any error shown. If possible, provide a non-confidential Markdown file that reproduces the problem.</p>
+      <div class="contact-box"><strong>Hashleaf Support</strong><br>Operator: Takashi Nakano<br>Email: <a href="mailto:nakano.prog@gmail.com">nakano.prog@gmail.com</a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><p class="footer-copy">© <span data-current-year>2026</span> Takashi Nakano.</p><div class="footer-links"><a href="/en/apps/hashleaf/">Hashleaf</a><a href="/en/apps/hashleaf/privacy/">Privacy</a><a href="https://apps.apple.com/us/app/hashleaf/id6794256173" rel="external">App Store</a></div></div></footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

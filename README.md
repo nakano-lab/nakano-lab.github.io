@@ -10,7 +10,7 @@ GitHub Pagesで公開する、日英対応のソフトウェア紹介サイト�
 ## 現在のページ
 
 - wayaknow: 紹介、サポート、プライバシーポリシー、利用規約
-- Hashleaf: 日本語・英語の紹介ページ、App Storeリンク
+- Hashleaf: 日本語・英語の紹介、サポート、プライバシーポリシー、App Storeリンク
 - CODO Monitor: 紹介、ダウンロード、マニュアル
 - CODO Review: 紹介、ダウンロード
 - App 05: 今後のアプリ用プレースホルダー（検索対象外）
@@ -37,6 +37,10 @@ App Store Connectとwayaknowアプリ内のURLは、公開後に上記へ変更�
 
 - 紹介（日本語）: `https://nakano-lab.github.io/ja/apps/hashleaf/`
 - 紹介（英語）: `https://nakano-lab.github.io/en/apps/hashleaf/`
+- サポート（日本語）: `https://nakano-lab.github.io/ja/apps/hashleaf/support/`
+- Support (English): `https://nakano-lab.github.io/en/apps/hashleaf/support/`
+- プライバシーポリシー（日本語）: `https://nakano-lab.github.io/ja/apps/hashleaf/privacy/`
+- Privacy Policy (English): `https://nakano-lab.github.io/en/apps/hashleaf/privacy/`
 - App Store: `https://apps.apple.com/us/app/hashleaf/id6794256173`
 
 ## ローカル確認
