@@ -695,6 +695,12 @@ button:focus-visible {
   border-radius: 28px;
 }
 
+.shot.portrait img {
+  width: min(100%, 420px);
+  margin-inline: auto;
+  border-radius: 28px;
+}
+
 .shot figcaption {
   margin-top: 12px;
   color: var(--muted);
@@ -993,6 +999,7 @@ button:focus-visible {
   .screenshot-grid { grid-template-columns: 1fr; }
   .shot:first-child { grid-row: auto; }
   .shot.phone img { width: min(76vw, 320px); }
+  .shot.portrait img { width: min(86vw, 420px); }
   .watch-callout { grid-template-columns: 1fr; }
   .watch-shot { grid-row: 1; }
   .watch-shot img { width: min(68vw, 230px); }

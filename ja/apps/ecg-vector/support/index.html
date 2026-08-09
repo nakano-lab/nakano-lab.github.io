@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ECG Vectorの基本操作、3Dと波形の読み方、無料版とPro、購入の復元、トラブルシューティング、お問い合わせ先。">
+  <title>ECG Vector サポート</title>
+  <link rel="canonical" href="https://nakano-lab.github.io/ja/apps/ecg-vector/support/">
+  <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/ecg-vector/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/ecg-vector/support/">
+  <link rel="icon" href="/assets/images/ecg-vector/icon.png"><link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="メインナビゲーション"><a class="brand" href="/ja/"><span class="brand-mark">N</span><span>Nakano Lab Software</span></a><div class="nav-links"><a href="/ja/apps/ecg-vector/">ECG Vector</a><a href="/ja/apps/ecg-vector/privacy/">プライバシー</a><a class="language-link" href="/en/apps/ecg-vector/support/" lang="en" data-language-link="en">EN</a></div></nav></header>
+  <main id="main" class="container document-layout">
+    <aside class="doc-nav" aria-label="ページ内目次"><strong>このページ</strong><a href="#start">基本操作</a><a href="#reading">3Dの読み方</a><a href="#breakdown">波形分解</a><a href="#display">表示と視点</a><a href="#pro">無料版とPro</a><a href="#troubleshooting">よくある問題</a><a href="#contact">お問い合わせ</a></aside>
+    <article class="document">
+      <p class="breadcrumbs"><a href="/ja/">Nakano Lab Software</a> / <a href="/ja/apps/ecg-vector/">ECG Vector</a> / サポート</p>
+      <h1>ECG Vector<br>サポート</h1>
+      <p class="updated">更新日: 2026年8月9日 · 対応: macOS 14以降／iOS・iPadOS 17以降</p>
+      <p>ECG Vectorは、心臓内の電気活動と各誘導に記録される波形の関係を学ぶための教育用シミュレータです。診断、治療判断、患者固有の波形予測には使用できません。</p>
+
+      <h2 id="start">1. 基本操作</h2>
+      <ol>
+        <li>「波形モデル」から成人正常、小児正常、または学びたい典型波形を選びます。無料版では成人正常を利用できます。</li>
+        <li>12誘導一覧の波形カードを選ぶと、その誘導が3Dの誘導軸と拡大波形へ反映されます。</li>
+        <li>再生ボタンで開始し、速度メニューから0.05〜1.0倍を選びます。時間バーを動かすと再生が一時停止し、任意の時相を確認できます。</li>
+        <li>左右の10 msボタンで、停止したまま少しずつ進めたり戻したりできます。</li>
+        <li>3D内をドラッグして回転し、ピンチまたはスクロールで拡大・縮小します。「初期視点」で標準の向きに戻ります。</li>
+      </ol>
+
+      <h2 id="reading">2. 3D表示の読み方</h2>
+      <h3>興奮と再分極</h3>
+      <p>黄色の発光軌跡は脱分極（興奮）波面、ピンクの発光軌跡は心室再分極（電気的回復）波面の概略です。再分極は新しい興奮ではなく、T波の由来を示します。</p>
+      <h3>微小双極子と心起電力</h3>
+      <p>波面の両側には相対的な細胞外電位の「−」と「＋」が生じます。局所的な矢印は−から＋へ向かう微小双極子です。同方向の成分は加算され、反対方向は相殺され、残った橙色の矢印がその時刻の心起電力 M(t) になります。</p>
+      <h3>誘導軸と投影</h3>
+      <p>灰青色の矢印は誘導のマイナス極からプラス極へ向かう誘導軸 L、緑色の矢印はM(t)をLへ投影した成分です。M(t)がプラス極側を向くと波形は上向き、マイナス極側を向くと下向きになります。</p>
+      <h3>収縮</h3>
+      <p>心房・心室の短縮と小さなねじれは機械的収縮です。収縮は電気的脱分極より少し遅れて起こりますが、それ自体を心電図電位へ別成分として加えてはいません。</p>
+
+      <h2 id="breakdown">3. 波形分解と2誘導比較</h2>
+      <p>「波形を分解」を選ぶと、ひとつの起電力成分を現在の誘導と比較誘導へ投影した破線、および全成分を合計した計測波形を表示します。成分選択ボタンから心房興奮、中隔興奮、心室主興奮、遅延成分、再分極などを切り替えられます。</p>
+      <p>山の数は興奮の回数ではありません。各時刻のベクトルが誘導軸へどの向き・どの強さで投影されたかの時間変化です。同じ電気活動でも、誘導軸が変わると1峰性、2峰性、陽性、陰性の違いが生じます。</p>
+
+      <h2 id="display">4. 表示項目、断面、透明度</h2>
+      <p>3Dパネル内の「表示」を開くと、断面／外観、心臓、内部構造、刺激伝導系、電気活動、機械的収縮、誘導計測、電極などを個別に表示・非表示できます。透明度も同じパネルで調整できます。</p>
+      <ul><li>初期状態は断面で、内部構造と電極は非表示です。</li><li>凡例を選ぶと、対応する3D要素を強調できます。</li><li>方位コンパスの右・左・上・下・前・後は患者基準です。</li><li>正面の電極図は患者と向かい合った図なので、画面左が患者右、画面右が患者左です。</li></ul>
+
+      <h2 id="pro">5. 無料版とECG Vector Pro</h2>
+      <p>無料版では、成人正常、I・II・aVF・V1・V4・V6誘導、固定された標準電極位置を利用できます。</p>
+      <p>ECG Vector Proは買い切りの非消耗型購入です。小児と典型的な臨床波形、全12誘導と任意誘導、電極位置編集と誤配置、正常比較、波形クイズ、お気に入りを解放します。サブスクリプションではありません。</p>
+      <h3>購入する</h3><ol><li>上部の王冠／「PRO」を選びます。</li><li>Appleから価格が読み込まれるまで待ちます。</li><li>価格付き購入ボタンを選び、Appleの購入画面を完了します。</li></ol>
+      <h3>購入を復元する</h3><p>購入時と同じApple AccountでサインインしたMac、iPhone、iPadからPro画面を開き、「購入を復元」を選びます。端末間の反映に少し時間がかかる場合があります。</p>
+
+      <h2 id="troubleshooting">6. よくある問題</h2>
+      <h3>購入ボタンがなく、「購入情報を再読み込み」と「購入を復元」だけが表示される</h3>
+      <p>StoreKitが製品情報を取得できていない状態です。通信を確認し、App StoreへApple Accountでサインインしていること、アプリが最新であること、購入が利用可能な国・地域であることを確認してください。少し待ってから「購入情報を再読み込み」を選びます。TestFlight版の購入はAppleのテスト環境で処理されます。</p>
+      <h3>購入済みなのにProが有効にならない</h3><p>購入時と同じApple Accountを確認し、「購入を復元」を実行してください。その後アプリを終了して開き直します。購入完了が保留中の場合は、Apple側の承認後に反映されます。</p>
+      <h3>3D表示が重い</h3><p>「表示」から内部構造、電極、不要な補助表示を隠し、解説を閉じてください。ほかの負荷の高いアプリを終了し、ECG Vectorを開き直すことも有効です。</p>
+      <h3>表示パネルの上側を選べない</h3><p>アプリを最新バージョンへ更新してください。パネルは画面内に固定され、内容をスクロールできます。改善しない場合は端末の表示拡大設定と画面の向きを添えてお問い合わせください。</p>
+      <h3>言語を変更したい</h3><p>ECG Vectorは端末またはアプリごとの言語設定に従います。設定アプリの「ECG Vector」→「言語」から、対応する言語を選んでください。</p>
+
+      <h2 id="contact">7. お問い合わせ</h2>
+      <p>問題を報告するときは、患者情報や個人情報を含めず、ECG Vectorのバージョンとビルド、端末とOS、選択した波形モデルと誘導、問題が起きるまでの操作、表示されたメッセージをお知らせください。</p>
+      <div class="contact-box"><strong>ECG Vector Support</strong><br>運営者: Takashi Nakano<br>メール: <a href="mailto:nakano.prog@gmail.com">nakano.prog@gmail.com</a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><p class="footer-copy">© <span data-current-year>2026</span> Takashi Nakano.</p><div class="footer-links"><a href="/ja/apps/ecg-vector/">ECG Vector</a><a href="/ja/apps/ecg-vector/privacy/">プライバシー</a></div></div></footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
