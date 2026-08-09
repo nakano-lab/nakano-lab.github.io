@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ECG Vector help for basic controls, reading the 3D view, waveform breakdown, Free and Pro access, purchase restoration, troubleshooting, and contact.">
+  <title>ECG Vector Support</title>
+  <link rel="canonical" href="https://nakano-lab.github.io/en/apps/ecg-vector/support/">
+  <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/ecg-vector/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/ecg-vector/support/">
+  <link rel="icon" href="/assets/images/ecg-vector/icon.png"><link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation"><a class="brand" href="/en/"><span class="brand-mark">N</span><span>Nakano Lab Software</span></a><div class="nav-links"><a href="/en/apps/ecg-vector/">ECG Vector</a><a href="/en/apps/ecg-vector/privacy/">Privacy</a><a class="language-link" href="/ja/apps/ecg-vector/support/" lang="ja" data-language-link="ja">日本語</a></div></nav></header>
+  <main id="main" class="container document-layout">
+    <aside class="doc-nav" aria-label="On this page"><strong>On this page</strong><a href="#start">Getting started</a><a href="#reading">Reading the 3D view</a><a href="#breakdown">Waveform breakdown</a><a href="#display">Display and view</a><a href="#pro">Free and Pro</a><a href="#troubleshooting">Troubleshooting</a><a href="#contact">Contact</a></aside>
+    <article class="document">
+      <p class="breadcrumbs"><a href="/en/">Nakano Lab Software</a> / <a href="/en/apps/ecg-vector/">ECG Vector</a> / Support</p>
+      <h1>ECG Vector<br>Support</h1>
+      <p class="updated">Updated August 9, 2026 · Requires macOS 14+ or iOS/iPadOS 17+</p>
+      <p>ECG Vector is an educational simulator for learning how electrical activity in the heart relates to the waveform recorded by each lead. Do not use it for diagnosis, treatment decisions, or patient-specific waveform prediction.</p>
+
+      <h2 id="start">1. Getting started</h2>
+      <ol><li>Choose Adult Normal, Pediatric Normal, or a typical pattern under Waveform Model. The free version includes Adult Normal.</li><li>Select a waveform card in the 12-lead overview. That lead becomes the 3D lead axis and enlarged trace.</li><li>Select Play, then choose 0.05× to 1.0× under Speed. Dragging the timeline pauses playback and moves every waveform cursor to the selected time.</li><li>Use the two 10 ms controls to step backward or forward while paused.</li><li>Drag the 3D view to rotate it, and pinch or scroll to zoom. Select Reset View to return to the standard orientation.</li></ol>
+
+      <h2 id="reading">2. Reading the 3D view</h2>
+      <h3>Excitation and repolarization</h3><p>The yellow luminous trail approximates the depolarization wavefront. The pink trail approximates ventricular repolarization—the electrical recovery associated with the T wave, not a second excitation.</p>
+      <h3>Microdipoles and the cardiac vector</h3><p>Relative extracellular − and + regions appear across a wavefront. Each local arrow points from − to + and represents a microdipole. Components in the same direction add, opposing components cancel, and the remaining orange arrow is the cardiac vector M(t).</p>
+      <h3>Lead axis and projection</h3><p>The blue-gray arrow is lead axis L, pointing from the negative to the positive electrode. The green arrow is the projection of M(t) onto L. A vector toward the positive electrode produces an upward deflection; a vector toward the negative electrode produces a downward deflection.</p>
+      <h3>Contraction</h3><p>Shortening and slight twisting of the atria and ventricles represent mechanical contraction. Contraction follows electrical depolarization with a delay and is not added as a separate ECG voltage component.</p>
+
+      <h2 id="breakdown">3. Waveform breakdown and two-lead comparison</h2>
+      <p>Select Break Down Waveform to project one source component into the current and comparison leads. Dashed traces show the selected component; solid traces show the recorded sum. Use the component selector to move among atrial excitation, septal excitation, main ventricular excitation, delayed components, and repolarization.</p>
+      <p>The number of peaks is not the number of excitations. It is the time-varying result of projecting each vector onto a lead axis. The same electrical activity can therefore be monophasic, biphasic, positive, or negative in different leads.</p>
+
+      <h2 id="display">4. Display items, cutaway, and opacity</h2>
+      <p>Open Display inside the 3D panel to switch between Cutaway and Exterior and independently show or hide the heart, internal structures, conduction system, electrical activity, mechanical contraction, lead measurement, and electrodes. Heart opacity is in the same panel.</p>
+      <ul><li>The default is Cutaway, with internal structures and electrodes hidden.</li><li>Selecting a legend entry highlights the matching element in 3D.</li><li>The orientation compass uses the patient’s right, left, superior, inferior, anterior, and posterior directions.</li><li>The front electrode map faces the patient: screen left is the patient’s right.</li></ul>
+
+      <h2 id="pro">5. Free access and ECG Vector Pro</h2>
+      <p>The free version includes Adult Normal, leads I, II, aVF, V1, V4, and V6, and fixed standard electrode positions.</p>
+      <p>ECG Vector Pro is a one-time non-consumable purchase, not a subscription. It unlocks pediatric and typical clinical patterns, all 12 and custom leads, electrode editing and misplacement, normal comparison, waveform quizzes, and favorites.</p>
+      <h3>Purchase Pro</h3><ol><li>Select the crown or PRO control in the top bar.</li><li>Wait for Apple to load the localized price.</li><li>Select the price button and complete Apple’s purchase sheet.</li></ol>
+      <h3>Restore a purchase</h3><p>On a Mac, iPhone, or iPad signed in with the Apple Account used for purchase, open the Pro screen and select Restore Purchases. Syncing across devices can take a short time.</p>
+
+      <h2 id="troubleshooting">6. Troubleshooting</h2>
+      <h3>Only Reload Purchase Information and Restore Purchases are shown</h3><p>StoreKit has not loaded the product. Check your connection, confirm that the App Store is signed in, update ECG Vector, and confirm that the purchase is available in your country or region. Wait briefly, then select Reload Purchase Information. Purchases in TestFlight builds are handled in Apple’s test environment.</p>
+      <h3>Pro is not active after purchase</h3><p>Confirm that you are using the same Apple Account, select Restore Purchases, then quit and reopen the app. A pending purchase activates after Apple approves it.</p>
+      <h3>The 3D view is slow</h3><p>Open Display and hide internal structures, electrodes, or other overlays you do not need. Close the explanation and other demanding apps, then reopen ECG Vector.</p>
+      <h3>The top items in the Display panel cannot be selected</h3><p>Update to the latest app version. The panel should remain fixed on screen while its contents scroll. If the issue remains, contact support with the device model, display zoom, and orientation.</p>
+      <h3>Change the interface language</h3><p>ECG Vector follows the device or per-app language. Open Settings → ECG Vector → Language and choose a supported language.</p>
+
+      <h2 id="contact">7. Contact</h2>
+      <p>Do not include patient or personal information in a report. Include the ECG Vector version and build, device and OS, selected waveform model and lead, steps leading to the issue, and any message shown.</p>
+      <div class="contact-box"><strong>ECG Vector Support</strong><br>Operator: Takashi Nakano<br>Email: <a href="mailto:nakano.prog@gmail.com">nakano.prog@gmail.com</a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><p class="footer-copy">© <span data-current-year>2026</span> Takashi Nakano.</p><div class="footer-links"><a href="/en/apps/ecg-vector/">ECG Vector</a><a href="/en/apps/ecg-vector/privacy/">Privacy</a></div></div></footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
