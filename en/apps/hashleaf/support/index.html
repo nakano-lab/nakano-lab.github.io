@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hashleaf system requirements, getting started guide, image and math troubleshooting, Quick Look, PDF export, Hashleaf Pro, and contact information.">
+  <meta name="description" content="Hashleaf system requirements, getting started guide, image and cloud troubleshooting, math, Quick Look, PDF and HTML export, folder tools, Hashleaf Pro, and contact information.">
   <title>Hashleaf Support</title>
   <link rel="canonical" href="https://nakano-lab.github.io/en/apps/hashleaf/support/">
   <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/hashleaf/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/hashleaf/support/">
@@ -16,43 +16,53 @@
     <article class="document">
       <p class="breadcrumbs"><a href="/en/">Nakano Lab Software</a> / <a href="/en/apps/hashleaf/">Hashleaf</a> / Support</p>
       <h1>Hashleaf<br>Support</h1>
-      <p class="updated">Updated August 8, 2026</p>
-      <p>Hashleaf is a focused Markdown viewer for iPhone, iPad, and Mac. It displays headings, tables, code, math, and a table of contents, includes document search, and provides Finder Quick Look previews on Mac.</p>
+      <p class="updated">Updated August 19, 2026</p>
+      <p>Hashleaf is a focused Markdown viewer for iPhone, iPad, and Mac. It displays images, headings, tables, code, math, and a table of contents, includes search and multiple documents, and provides separate windows and Finder Quick Look previews on Mac.</p>
 
       <h2 id="requirements">System requirements</h2>
       <ul><li>iPhone and iPad: iOS or iPadOS 17 or later</li><li>Mac: macOS 14 or later</li><li>Markdown extensions: <code>.md</code>, <code>.markdown</code>, and <code>.mdown</code></li><li>Text encodings: UTF-8, UTF-16, and Shift_JIS</li><li>Maximum Markdown file size: 10 MB</li></ul>
       <p>The interface automatically follows your device’s preferred languages. Hashleaf supports English, Japanese, Korean, Simplified and Traditional Chinese, Spanish, French, German, Brazilian Portuguese, and Italian.</p>
 
       <h2 id="start">Getting started</h2>
-      <h3>Open only a Markdown file</h3>
-      <ol><li>On the welcome screen, select Open Markdown File.</li><li>Choose a Markdown file in Files or Finder.</li><li>Use the toolbar or menu for the table of contents, search, text size, and sharing.</li></ol>
-      <p>With this method, Apple’s document picker grants access only to the selected Markdown file. Relative images and linked local files may remain inaccessible.</p>
+      <h3>Open Markdown files</h3>
+      <ol><li>On the welcome screen or in the menu, select Open Markdown Files.</li><li>Choose one or more Markdown files in Files or Finder.</li><li>Use the toolbar or menu for the table of contents, search, text size, and sharing.</li></ol>
+      <p>Switch between multiple open documents from the menu. On Mac, documents opened from Finder appear in separate windows. If Apple’s document picker grants access only to the Markdown file, Hashleaf may ask you to select its folder before it can load relative images and linked local files.</p>
+
+      <h3>Open a folder containing Markdown</h3>
+      <ol><li>From the menu, select Open Folder Containing Markdown.</li><li>Choose the folder containing the Markdown and referenced images.</li><li>If the folder contains multiple Markdown files, select the document to display.</li></ol>
+      <p>Files and folders can be opened from local storage, iCloud Drive, Dropbox, and other cloud storage providers that appear in Files or Finder.</p>
 
       <h3>Preview with Quick Look on Mac</h3>
       <ol><li>Launch Hashleaf once.</li><li>Select a Markdown file in Finder.</li><li>Press the Space bar.</li></ol>
       <p>Quick Look displays Markdown and rendered math. If macOS has not recognized the extension yet, quit and reopen Hashleaf and Finder.</p>
 
       <h2 id="images">Display images used in a document</h2>
-      <p>When Markdown contains a relative reference such as <code>![Description](images/photo.png)</code>, use Hashleaf Pro, select Open with Document Images, and choose the folder where the Markdown file is stored. After selecting the Markdown inside that folder, Hashleaf can read the images and linked files referenced by the document.</p>
+      <p>When Markdown contains a relative reference such as <code>![Description](images/photo.png)</code>, select Open Folder Containing Markdown and choose the folder where the Markdown file is stored. After selecting the Markdown inside that folder, Hashleaf can read the images and linked files referenced by the document. This feature is available for free.</p>
       <p>Folder selection is required by iOS, iPadOS, and macOS security. Hashleaf does not sign in directly to Dropbox, Google Drive, OneDrive, or another storage service. A provider works when it appears in Files or Finder through File Provider and can download the required files to the device.</p>
       <p>Hashleaf remembers an authorized folder on the device and reuses access when possible. You may need to select it again if the operating system or cloud provider revokes access or if the files are moved.</p>
       <p>Image limits are 32 MB per image and 128 MB per document on iPhone and iPad, and 64 MB per image and 256 MB per document on Mac. Supported formats are PNG, JPEG, GIF, WebP, HEIC/HEIF, TIFF, BMP, AVIF, and SVG.</p>
 
       <h2 id="faq">Frequently asked questions</h2>
       <h3>Images are not displayed</h3>
-      <ul><li>With Hashleaf Pro, use Open with Document Images and select the folder containing the Markdown file.</li><li>Check that the relative path, capitalization, extension, and actual filename match.</li><li>For security, files outside the selected folder cannot be read. Keep the Markdown and its referenced files in the same folder hierarchy.</li><li>If a cloud file shows a cloud icon, confirm that Files or Finder can download it.</li><li>Check the supported formats and size limits above.</li></ul>
+      <ul><li>Use Open Folder Containing Markdown and select the folder containing the Markdown file.</li><li>Check that the relative path, capitalization, extension, and actual filename match.</li><li>For security, files outside the selected folder cannot be read. Keep the Markdown and its referenced files in the same folder hierarchy.</li><li>If a cloud file shows a cloud icon, confirm that Files or Finder can download it.</li><li>Check the supported formats and size limits above.</li></ul>
 
       <h3>Math is still displayed with <code>$$</code></h3>
       <p>Write inline math as <code>$E = mc^2$</code>. Put <code>$$</code> before and after display math. Confirm that the opening and closing delimiters match and that the expression is not inside a code block. Math resources are bundled with Hashleaf and normally require no network connection.</p>
 
       <h3>How do I search a document?</h3>
-      <p>Select Search. On Mac, you can also press Command-F. Search covers the currently displayed document.</p>
+      <p>Select Search. On Mac, you can also press Command-F. Free search covers the currently displayed document. With Hashleaf Pro, Folder Tools can search every Markdown file in a selected folder.</p>
 
       <h3>What happens when I select a link?</h3>
       <p>Within an authorized folder, Markdown files open in Hashleaf, while folders and other files are passed to the operating system and opened by a compatible default app. Web, email, and telephone links also open in the corresponding system app.</p>
 
-      <h3>How do I export a PDF?</h3>
-      <p>On Mac, open the Markdown and choose Export as PDF from the menu. Hashleaf Pro is required. The displayed text, images, and math are saved as an A4 PDF in the location you select.</p>
+      <h3>How do I export PDF or HTML?</h3>
+      <p>With Hashleaf Pro, open a document and select Export Studio from the menu. Choose PDF or self-contained HTML. You can set a theme, custom CSS, PDF paper size, orientation, margins, header, footer, page numbers, and a table of contents. Multiple documents can be exported individually or combined.</p>
+
+      <h3>How do I check for broken links?</h3>
+      <p>With Hashleaf Pro, select a folder in Folder Tools and run Link Check. Hashleaf checks local files and images referenced by Markdown throughout that folder.</p>
+
+      <h3>How do I follow changes from an external editor on Mac?</h3>
+      <p>With Hashleaf Pro, turn on Live Preview in the menu. Hashleaf automatically refreshes the displayed Markdown when an external editor saves it.</p>
 
       <h3>Is Hashleaf Pro a subscription?</h3>
       <p>No. Hashleaf Pro is a one-time In-App Purchase. On an iPhone, iPad, or Mac using the same Apple Account, select Restore Purchases. Pricing and purchase processing are managed by the App Store.</p>
@@ -62,7 +72,7 @@
       <p>If the issue continues, contact us with a screenshot that hides personal information and include the device, OS, and Hashleaf version and build.</p>
 
       <h3>Are my files sent to the developer?</h3>
-      <p>No. Selected Markdown, relative images, linked files, and generated PDFs are processed on your device. If a Markdown document embeds an image from a web URL, however, your device contacts that web server to load the image. See the <a href="/en/apps/hashleaf/privacy/">Privacy Policy</a> for details.</p>
+      <p>No. Selected Markdown, relative images, linked files, and generated PDF or HTML files are processed on your device. If a Markdown document embeds an image from a web URL, however, your device contacts that web server to load the image. See the <a href="/en/apps/hashleaf/privacy/">Privacy Policy</a> for details.</p>
 
       <h2 id="contact">Contact</h2>
       <p>When reporting a problem, do not include personal information or confidential document content. Please include the Hashleaf version and build; device and OS; storage location, such as On My Device, iCloud Drive, or Dropbox; steps leading to the issue; and any error shown. If possible, provide a non-confidential Markdown file that reproduces the problem.</p>

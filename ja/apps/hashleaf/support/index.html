@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hashleafの使い方、動作環境、画像・数式・Quick Look・PDF・Hashleaf Proについてのよくある質問とお問い合わせ先。">
+  <meta name="description" content="Hashleafの使い方、動作環境、画像・クラウド・数式・Quick Look・PDF／HTML書き出し・フォルダツール・Hashleaf Proについてのよくある質問とお問い合わせ先。">
   <title>Hashleaf サポート</title>
   <link rel="canonical" href="https://nakano-lab.github.io/ja/apps/hashleaf/support/">
   <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/hashleaf/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/hashleaf/support/">
@@ -16,43 +16,53 @@
     <article class="document">
       <p class="breadcrumbs"><a href="/ja/">Nakano Lab Software</a> / <a href="/ja/apps/hashleaf/">Hashleaf</a> / サポート</p>
       <h1>Hashleaf<br>サポート</h1>
-      <p class="updated">更新日: 2026年8月8日</p>
-      <p>Hashleafは、Markdown文書をiPhone、iPad、Macで読みやすく表示するビューアです。見出し、表、コード、数式、目次、検索に対応し、MacではFinderのQuick Lookも利用できます。</p>
+      <p class="updated">更新日: 2026年8月19日</p>
+      <p>Hashleafは、Markdown文書をiPhone、iPad、Macで読みやすく表示するビューアです。画像、見出し、表、コード、数式、目次、検索、複数文書に対応し、Macでは複数ウインドウとFinderのQuick Lookも利用できます。</p>
 
       <h2 id="requirements">動作環境</h2>
       <ul><li>iPhone／iPad: iOS／iPadOS 17以降</li><li>Mac: macOS 14以降</li><li>対応するMarkdown拡張子: <code>.md</code>、<code>.markdown</code>、<code>.mdown</code></li><li>文字コード: UTF-8、UTF-16、Shift_JIS</li><li>Markdownファイルの最大サイズ: 10MB</li></ul>
       <p>アプリの画面表示は、端末の優先言語に合わせて、日本語、英語、韓国語、中国語（簡体字・繁体字）、スペイン語、フランス語、ドイツ語、ブラジルポルトガル語、イタリア語へ自動的に切り替わります。</p>
 
       <h2 id="start">基本的な使い方</h2>
-      <h3>Markdownだけを開く</h3>
-      <ol><li>起動画面で「Markdownファイルを開く」を選びます。</li><li>「ファイル」またはFinderからMarkdownファイルを選びます。</li><li>目次、検索、文字サイズ、共有は上部のツールバーまたはメニューから利用できます。</li></ol>
-      <p>この方法では、Appleのファイル選択画面が選択したMarkdownファイルだけへのアクセスを許可します。本文で相対パス指定された画像やリンク先ファイルにはアクセスできない場合があります。</p>
+      <h3>Markdownファイルを開く</h3>
+      <ol><li>起動画面またはメニューで「Markdownファイルを開く」を選びます。</li><li>「ファイル」またはFinderから1つ以上のMarkdownファイルを選びます。</li><li>目次、検索、文字サイズ、共有は上部のツールバーまたはメニューから利用できます。</li></ol>
+      <p>複数の文書を開いた場合はメニューから切り替えられ、MacではFinderから開いた文書を別ウインドウに表示できます。Appleのファイル選択画面がMarkdownファイルだけへのアクセスを許可した場合、相対パス画像やリンク先ファイルを読み込むためにフォルダの選択を求めることがあります。</p>
+
+      <h3>Markdownがあるフォルダを開く</h3>
+      <ol><li>メニューから「Markdownがあるフォルダを開く」を選びます。</li><li>Markdownと参照先の画像が含まれるフォルダを選びます。</li><li>フォルダ内に複数のMarkdownがある場合は、表示する文書を選びます。</li></ol>
+      <p>ファイルとフォルダは、端末内、iCloud Drive、Dropboxなど「ファイル」またはFinderに表示されるクラウドストレージから開けます。</p>
 
       <h3>MacのQuick Lookで見る</h3>
       <ol><li>Hashleafを一度起動します。</li><li>FinderでMarkdownファイルを選択します。</li><li>Spaceキーを押します。</li></ol>
       <p>Quick LookではMarkdownと数式を表示できます。OSが拡張機能をまだ認識していない場合は、HashleafとFinderを終了して起動し直してください。</p>
 
       <h2 id="images">本文で使われている画像を表示する</h2>
-      <p>Markdownに<code>![説明](images/photo.png)</code>のような相対パスがある場合、Hashleaf Proで「画像も表示して開く」を選び、Markdownが保存されているフォルダを指定します。フォルダ内のMarkdownを選ぶと、その文書から参照されている画像とリンク先ファイルへ読み取りアクセスできます。</p>
+      <p>Markdownに<code>![説明](images/photo.png)</code>のような相対パスがある場合は、「Markdownがあるフォルダを開く」を選び、Markdownが保存されているフォルダを指定します。フォルダ内のMarkdownを選ぶと、その文書から参照されている画像とリンク先ファイルへ読み取りアクセスできます。この機能は無料で利用できます。</p>
       <p>フォルダ選択は、iOS、iPadOS、macOSのセキュリティ機能により必要です。HashleafがDropbox、Google Drive、OneDriveなどへ直接ログインすることはありません。各サービスが「ファイル」またはFinderのFile Providerに表示され、必要なファイルが端末へダウンロード可能であれば利用できます。</p>
       <p>許可したフォルダは端末内に記憶され、次回以降は可能な範囲で自動的に再利用されます。クラウドサービスやOSが権限を失効させた場合、または別のフォルダへ移動した場合は、再選択が必要です。</p>
       <p>画像の上限は、iPhone／iPadでは1枚32MB・1文書合計128MB、Macでは1枚64MB・1文書合計256MBです。PNG、JPEG、GIF、WebP、HEIC／HEIF、TIFF、BMP、AVIF、SVGに対応しています。</p>
 
       <h2 id="faq">よくある質問</h2>
       <h3>画像が表示されません</h3>
-      <ul><li>Hashleaf Proで「画像も表示して開く」を使い、Markdownが保存されているフォルダを選んでください。</li><li>画像の相対パス、大文字と小文字、拡張子が実際のファイル名と一致するか確認してください。</li><li>画像が選択したフォルダの外にある場合は、安全上読み込めません。Markdownと参照先を同じフォルダ階層に置いてください。</li><li>クラウド上の画像に雲のマークがある場合は、「ファイル」またはFinderでダウンロードできることを確認してください。</li><li>上記の画像サイズ上限と対応形式を確認してください。</li></ul>
+      <ul><li>「Markdownがあるフォルダを開く」を使い、Markdownが保存されているフォルダを選んでください。</li><li>画像の相対パス、大文字と小文字、拡張子が実際のファイル名と一致するか確認してください。</li><li>画像が選択したフォルダの外にある場合は、安全上読み込めません。Markdownと参照先を同じフォルダ階層に置いてください。</li><li>クラウド上の画像に雲のマークがある場合は、「ファイル」またはFinderでダウンロードできることを確認してください。</li><li>上記の画像サイズ上限と対応形式を確認してください。</li></ul>
 
       <h3>数式が<code>$$</code>のまま表示されます</h3>
       <p>インライン数式は<code>$E = mc^2$</code>、独立した数式は<code>$$</code>を数式の前後に置いて記述します。開始と終了の記号が対応していること、コードブロック内に入っていないことを確認してください。数式表示用のリソースはアプリに同梱され、通常は通信を必要としません。</p>
 
       <h3>文書内を検索するには</h3>
-      <p>検索ボタンを選びます。MacではCommand＋Fも利用できます。検索対象は現在表示中の文書です。</p>
+      <p>検索ボタンを選びます。MacではCommand＋Fも利用できます。無料の検索対象は現在表示中の文書です。Hashleaf Proの「フォルダツール」では、選択したフォルダ内のすべてのMarkdownを全文検索できます。</p>
 
       <h3>リンクを選ぶとどうなりますか</h3>
       <p>アクセスが許可されたフォルダ内では、MarkdownファイルはHashleafで開き、フォルダとその他のファイルはOSに渡して対応する標準アプリで開きます。Web、メール、電話のリンクもOSの対応アプリで開きます。</p>
 
-      <h3>PDFへ書き出すには</h3>
-      <p>Mac版でMarkdownを開き、メニューから「PDFとして書き出す」を選びます。この機能にはHashleaf Proが必要です。表示中の本文、画像、数式をA4 PDFとして、選択した場所へ保存します。</p>
+      <h3>PDFまたはHTMLへ書き出すには</h3>
+      <p>Hashleaf ProでMarkdownを開き、メニューから「出力スタジオ」を選びます。PDFまたはセルフコンテインドHTMLを選び、テーマ、カスタムCSS、PDFの用紙、向き、余白、ヘッダー、フッター、ページ番号、目次を設定できます。複数文書は個別または1つに結合して書き出せます。</p>
+
+      <h3>リンク切れを調べるには</h3>
+      <p>Hashleaf Proの「フォルダツール」でフォルダを選び、「リンク切れ検査」を実行します。フォルダ内のMarkdownから参照されているローカルファイルと画像をまとめて確認できます。</p>
+
+      <h3>Macで外部エディタの変更を自動反映するには</h3>
+      <p>Hashleaf Proでメニューの「ライブプレビュー」をオンにします。表示中のMarkdownを外部エディタで保存すると、Hashleafの表示が自動的に更新されます。</p>
 
       <h3>Hashleaf Proはサブスクリプションですか</h3>
       <p>いいえ。Hashleaf Proは買い切りのApp内課金です。同じApple Accountを使用するiPhone、iPad、Macでは「購入を復元」を選択できます。価格と購入処理はApp Storeが管理します。</p>
@@ -62,7 +72,7 @@
       <p>解決しない場合は、個人情報を隠したエラー画面と、端末・OS・HashleafのVersion／Buildを添えてお問い合わせください。</p>
 
       <h3>ファイルは開発者へ送信されますか</h3>
-      <p>送信されません。選択したMarkdown、相対パス画像、リンク先ファイル、生成PDFは端末内で処理されます。ただし、Markdownに外部Web画像が含まれる場合は、その画像を表示するため、記載されたWebサーバーへ端末から通信します。詳しくは<a href="/ja/apps/hashleaf/privacy/">プライバシーポリシー</a>をご確認ください。</p>
+      <p>送信されません。選択したMarkdown、相対パス画像、リンク先ファイル、生成したPDF／HTMLは端末内で処理されます。ただし、Markdownに外部Web画像が含まれる場合は、その画像を表示するため、記載されたWebサーバーへ端末から通信します。詳しくは<a href="/ja/apps/hashleaf/privacy/">プライバシーポリシー</a>をご確認ください。</p>
 
       <h2 id="contact">お問い合わせ</h2>
       <p>不具合のご連絡には、個人情報や機密文書の内容を含めず、HashleafのVersionとBuild、端末とOS、ファイルの保存先（端末内／iCloud Drive／Dropboxなど）、問題が起きるまでの操作、表示されたエラーをお知らせください。可能であれば、問題を再現できる機密情報を含まないMarkdownをご用意ください。</p>
