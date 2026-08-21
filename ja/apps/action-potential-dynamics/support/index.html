@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="活動電位ダイナミクスの動作環境、基本的な使い方、シミュレーションごとの見るべきポイント、よくある質問、お問い合わせ先。">
+  <title>活動電位ダイナミクス サポート</title>
+  <link rel="canonical" href="https://nakano-lab.github.io/ja/apps/action-potential-dynamics/support/">
+  <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/action-potential-dynamics/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/action-potential-dynamics/support/">
+  <link rel="icon" href="/assets/images/action-potential-dynamics/icon.png"><link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="メインナビゲーション"><a class="brand" href="/ja/"><span class="brand-mark">N</span><span>Nakano Lab Software</span></a><div class="nav-links"><a href="/ja/apps/action-potential-dynamics/">活動電位ダイナミクス</a><a href="/ja/apps/action-potential-dynamics/privacy/">プライバシー</a><a class="language-link" href="/en/apps/action-potential-dynamics/support/" lang="en" data-language-link="en">EN</a></div></nav></header>
+  <main id="main" class="container document-layout">
+    <aside class="doc-nav" aria-label="ページ内目次"><strong>このページ</strong><a href="#requirements">動作環境</a><a href="#start">基本的な使い方</a><a href="#observe">見るべきポイント</a><a href="#faq">よくある質問</a><a href="#contact">お問い合わせ</a></aside>
+    <article class="document">
+      <p class="breadcrumbs"><a href="/ja/">Nakano Lab Software</a> / <a href="/ja/apps/action-potential-dynamics/">活動電位ダイナミクス</a> / サポート</p>
+      <h1>活動電位ダイナミクス<br>サポート</h1>
+      <p class="updated">更新日: 2026年8月21日</p>
+      <p>活動電位ダイナミクスは、イオンの動き、チャネルの状態、コンダクタンス、電流、膜電位を同じ時刻で結びつけて観察するiPhone・iPad・Mac向けシミュレーターです。活動電位、神経細胞発火特性、イオンチャネル、心臓リズム、シナプス統合、軸索伝導の6画面を収録しています。</p>
+
+      <h2 id="requirements">動作環境</h2>
+      <ul><li>iPhone／iPad: iOS／iPadOS 17以降</li><li>Mac: macOS 14以降</li></ul>
+      <p>日本語、英語、韓国語、中国語（簡体字・繁体字）、スペイン語、フランス語、ドイツ語、イタリア語、ブラジルポルトガル語に対応しています。画面表示は端末の優先言語に合わせて切り替わります。</p>
+
+      <h2 id="start">基本的な使い方</h2>
+      <ol>
+        <li>画面上部のタブから、見たいシミュレーションを選びます。横幅が足りない場合は、タブ列を横へスクロールできます。</li>
+        <li>再生／一時停止を切り替えます。再生速度は0.25×、0.5×、1×、2×から選べます。</li>
+        <li>グラフ下の時間カーソルを動かし、任意の時点の粒子、チャネルゲート、波形、説明を対応させます。</li>
+        <li>右側または下部の調節パネルで、細胞型、条件、刺激、パラメータを変更します。情報ボタンから各設定の説明を確認できます。</li>
+        <li>波形を保持できる画面では、変更前の波形を残してから条件を変え、変更後と重ねて比較します。</li>
+        <li>最初の状態へ戻すときは、リセットボタンを押します。</li>
+      </ol>
+
+      <h3>実験モード</h3>
+      <p>実験モードは買い切りです。最大Na⁺・K⁺・Ca²⁺コンダクタンスの変更、標準波形との比較、代表的なチャネル抑制プリセットを利用できます。同じApple Accountを使用する別の対応端末では「購入を復元」を選んでください。</p>
+
+      <h2 id="observe">シミュレーションごとの見るべきポイント</h2>
+      <h3>活動電位</h3>
+      <p>神経細胞では、刺激後にNa⁺コンダクタンスが先に立ち上がって急速な脱分極を作り、遅れてK⁺コンダクタンスが増えて再分極と一過性の過分極を作る順序を見ます。心室筋細胞では、Na⁺による立ち上がりの後にCa²⁺流入とK⁺流出が拮抗し、長いプラトー相を作る点を確認します。</p>
+      <h3>神経細胞発火特性</h3>
+      <p>各細胞の選択欄に特徴と見るべきポイントを表示します。錐体細胞では発火間隔が徐々に広がる適応、ファーストスパイキング介在ニューロンでは短い間隔が保たれる点、中型有棘ニューロンでは深い静止電位と最初の発火までの遅れ、コリン作動性ニューロンでは順応を伴う持続発火を見ます。視床中継ニューロンでは負の入力終了後の反跳発火、視床網様核ニューロンでは低閾値バースト、中脳ドパミン作動性ニューロンでは低頻度の規則発火、Purkinje細胞では比較的小さい入力に対する高頻度応答を比較してください。</p>
+      <h3>イオンチャネル</h3>
+      <p>カレントクランプでは、注入電流の後にVと各gがどの順序で変わるかを見ます。ボルテージクランプでは、上段の小さなV指令と、チャネルごとに分けたg・Iを対応させます。細胞パラメータセットは、各細胞で比較する代表的なチャネル構成をまとめて切り替えます。</p>
+      <h3>心臓リズム</h3>
+      <p>洞結節、心房、房室結節、His–Purkinje系、心室の順に興奮が進む時間差を見ます。徐脈・頻脈では周期、房室ブロックでは心房興奮と心室興奮の対応数および房室伝導時間を正常条件と比較してください。</p>
+      <h3>シナプス統合</h3>
+      <p>興奮性入力gEと抑制性入力gIの時間的な重なりが膜電位と発火閾値をどう変えるかを見ます。興奮増加と抑制低下は、似た発火増加でも原因となるコンダクタンスが異なる点を比較してください。</p>
+      <h3>軸索伝導</h3>
+      <p>模式図上の各絞輪と、対応する電位ピークの順序を見ます。局所脱髄では、病変部の電流漏れによって次の絞輪へ届く脱分極と安全率が低下し、条件によって伝導が遅れるか途絶する流れを確認します。「絞輪1」〜「絞輪7」はこの簡略化した軸索内の順番であり、解剖学的な固有名称ではありません。画面では絞輪1を刺激点、絞輪4を中央、絞輪7を下流端として補足します。</p>
+
+      <h2 id="faq">よくある質問</h2>
+      <h3>グラフや粒子が動きません</h3>
+      <p>一時停止になっていないか確認し、再生を押してください。時間カーソルを手動で動かした後は一時停止になる場合があります。改善しないときはリセットし、アプリを起動し直してください。</p>
+      <h3>コリン作動性ニューロンの遅延応答が見えません</h3>
+      <p>イオンチャネルでコリン作動性ニューロンの細胞パラメータセットを選び、まず刺激終了後80 msまで含む全体表示を確認してください。必要に応じて波形を拡大し、刺激終了後のリバウンドを観察します。表示開始位置を個別に合わせる必要はありません。神経細胞発火特性で反跳発火を見る場合は、視床中継ニューロンへ負の持続ステップを与えます。</p>
+      <h3>注入電流やステップ長はどこまで変えられますか</h3>
+      <p>イオンチャネルの注入電流は−100〜200 µA/cm²、単一ステップの長さは最大300 msまで調整できます。入力グラフは固定の余白を持ちつつ、設定した入力量が高さに反映されます。</p>
+      <h3>条件を変える前後の波形を比較できますか</h3>
+      <p>比較対応画面で現在のグラフを保持してからパラメータを変更すると、変更前と変更後を重ねて確認できます。線種や凡例で標準・保持・現在の条件を区別してください。</p>
+      <h3>注入電流を変えると細胞パラメータセットが「カスタム」になりますか</h3>
+      <p>注入電流やステップ長は刺激条件であり、細胞パラメータセットそのものではありません。チャネルの有効状態または最大コンダクタンスを変更した場合に「カスタム」と表示されます。刺激だけを変えたのに「カスタム」になる場合は、アプリを最新版へ更新し、再現手順を添えてお問い合わせください。</p>
+      <h3>実験モードを別の端末で使えません</h3>
+      <p>購入時と同じApple AccountでApp Storeへサインインし、「購入を復元」を選択してください。購入処理と購入状態はAppleのStoreKitによって管理されます。</p>
+      <h3>表示内容を診断や治療判断に使えますか</h3>
+      <p>使えません。疾患関連条件を含むすべてのモデルは、電気生理学的な機序を比較するために簡略化されています。個々の患者の状態を再現せず、本アプリは医療機器ではありません。</p>
+      <h3>シミュレーション内容について指摘があります</h3>
+      <p>モデル名、細胞型または条件、変更したパラメータ、期待する挙動、根拠となる文献情報をお知らせください。内容を確認し、必要に応じてモデルや説明を改善します。</p>
+      <h3>アプリはデータを送信しますか</h3>
+      <p>シミュレーション値や操作履歴を開発者へ送信しません。ユーザーアカウント、広告、アクセス解析もありません。詳しくは<a href="/ja/apps/action-potential-dynamics/privacy/">プライバシーポリシー</a>をご覧ください。</p>
+
+      <h2 id="contact">お問い合わせ</h2>
+      <p>不具合のご連絡には、個人情報を含めず、アプリのVersionとBuild、端末とOS、シミュレーション名、選択した細胞型・条件、変更したパラメータ、問題が起きるまでの操作、可能であればスクリーンショットをお知らせください。</p>
+      <div class="contact-box"><strong>活動電位ダイナミクス Support</strong><br>運営者: Takashi Nakano<br>メール: <a href="mailto:nakano.prog@gmail.com">nakano.prog@gmail.com</a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><p class="footer-copy">© <span data-current-year>2026</span> Takashi Nakano.</p><div class="footer-links"><a href="/ja/apps/action-potential-dynamics/">活動電位ダイナミクス</a><a href="/ja/apps/action-potential-dynamics/privacy/">プライバシー</a></div></div></footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
