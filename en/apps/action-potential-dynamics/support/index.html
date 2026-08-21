@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirements, basic use, what to observe in each simulation, frequently asked questions, and contact information for Action Potential Dynamics.">
+  <title>Action Potential Dynamics Support</title>
+  <link rel="canonical" href="https://nakano-lab.github.io/en/apps/action-potential-dynamics/support/">
+  <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/action-potential-dynamics/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/action-potential-dynamics/support/">
+  <link rel="icon" href="/assets/images/action-potential-dynamics/icon.png"><link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation"><a class="brand" href="/en/"><span class="brand-mark">N</span><span>Nakano Lab Software</span></a><div class="nav-links"><a href="/en/apps/action-potential-dynamics/">Action Potential Dynamics</a><a href="/en/apps/action-potential-dynamics/privacy/">Privacy</a><a class="language-link" href="/ja/apps/action-potential-dynamics/support/" lang="ja" data-language-link="ja">日本語</a></div></nav></header>
+  <main id="main" class="container document-layout">
+    <aside class="doc-nav" aria-label="On this page"><strong>On this page</strong><a href="#requirements">Requirements</a><a href="#start">Getting started</a><a href="#observe">What to observe</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></aside>
+    <article class="document">
+      <p class="breadcrumbs"><a href="/en/">Nakano Lab Software</a> / <a href="/en/apps/action-potential-dynamics/">Action Potential Dynamics</a> / Support</p>
+      <h1>Action Potential Dynamics<br>Support</h1>
+      <p class="updated">Updated: August 22, 2026</p>
+      <p>Action Potential Dynamics is an iPhone, iPad, and Mac simulator that connects ion movement, channel state, conductance, current, and membrane voltage at the same model time. It contains six screens: Action Potential, Neuronal Firing Characteristics, Ion Channels, Cardiac Rhythm, Synaptic Integration, and Axon Conduction.</p>
+
+      <h2 id="requirements">System requirements</h2>
+      <ul><li>iPhone and iPad: iOS/iPadOS 17 or later</li><li>Mac: macOS 14 or later</li></ul>
+      <p>The interface supports English, Japanese, Korean, Simplified and Traditional Chinese, Spanish, French, German, Italian, and Brazilian Portuguese. It follows the preferred language order on your device.</p>
+
+      <h2 id="start">Getting started</h2>
+      <ol>
+        <li>Choose a simulation from the tab row at the top. Scroll the row horizontally when all tabs do not fit.</li>
+        <li>Start or pause playback. Available playback speeds are 0.25×, 0.5×, 1×, and 2×.</li>
+        <li>Move the time cursor below the graph to align particle positions, channel gates, traces, and explanations at any recorded instant.</li>
+        <li>Use the control panel at the side or bottom to change the cell type, condition, stimulus, or parameter. Information buttons explain individual settings.</li>
+        <li>Where trace hold is available, keep the current result before changing a condition, then overlay the before-and-after traces.</li>
+        <li>Use Reset to return the selected simulation to its initial state.</li>
+      </ol>
+
+      <h3>Experiment &amp; Comparison Mode</h3>
+      <p>Experiment &amp; Comparison Mode is a one-time purchase. It records up to 50 conditions and key measurements across all six simulations, compares the latest two results from the same simulation numerically, and exports all records as CSV. It also unlocks maximum Na⁺, K⁺, and Ca²⁺ conductance controls, standard-trace comparison, channel-inhibition presets, held Ion Channel traces, and five specialized neuron presets. All six core simulations and four foundational neuron presets remain available without purchase. On another supported device using the same Apple Account, choose Restore Purchases.</p>
+
+      <h2 id="observe">What to observe in each simulation</h2>
+      <h3>Action Potential</h3>
+      <p>In the neuronal model, look for Na⁺ conductance rising first to produce rapid depolarization, followed by K⁺ conductance driving repolarization and transient afterhyperpolarization. In the ventricular model, compare the fast Na⁺ upstroke with the longer phase in which Ca²⁺ influx and K⁺ efflux sustain the plateau.</p>
+      <h3>Neuronal Firing Characteristics</h3>
+      <p>The cell selector states both the characteristic and the point to observe. Compare adaptation in the cortical pyramidal neuron, short stable intervals in the fast-spiking interneuron, the hyperpolarized resting level and delayed first spike of the medium spiny neuron, and autonomous firing with accommodation in the cholinergic neuron. The hippocampal CA1 profile shows stronger adaptation, the thalamic relay profile rebound after negative input, the thalamic reticular profile a low-threshold burst, the midbrain dopaminergic profile low-frequency regular firing, and the Purkinje profile a high-rate response to relatively modest input.</p>
+      <h3>Ion Channels</h3>
+      <p>Under current clamp, relate injected current to the sequence of changes in V and each g. Under voltage clamp, align the compact V-command plot with separately displayed g and I. Cell parameter sets switch among representative channel compositions for each cell profile.</p>
+      <h3>Cardiac Rhythm</h3>
+      <p>Follow the timing from sinus node to atria, AV node, His–Purkinje system, and ventricles. Compare cycle length in bradycardia or tachycardia, then atrial-to-ventricular event ratios and AV conduction time in the block conditions.</p>
+      <h3>Synaptic Integration</h3>
+      <p>Watch how the timing overlap of excitatory gE and inhibitory gI changes membrane voltage and threshold crossing. Increased excitation and reduced inhibition may both increase firing, but the causal conductance differs.</p>
+      <h3>Axon Conduction</h3>
+      <p>Match each node of Ranvier in the diagram to its voltage peak. In focal demyelination, follow how current leakage lowers depolarization and safety factor at the next node, producing delay or failure under severe conditions. “Node 1” through “Node 7” indicate sequential positions in this simplified axon; they are not anatomical proper names. The screen identifies Node 1 as the stimulus site, Node 4 as the middle, and Node 7 as the downstream end.</p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <h3>The graph or particles do not move</h3>
+      <p>Check whether playback is paused and press Play. Moving the time cursor manually may pause playback. If the screen still does not update, reset the simulation and restart the app.</p>
+      <h3>I cannot see the delayed response in the cholinergic profile</h3>
+      <p>In Ion Channels, select the cholinergic cell parameter set and start with the overview, which includes 80 ms after stimulus offset. Zoom the trace if needed to inspect the post-stimulus rebound; no separate display start time is required. In Neuronal Firing Characteristics, select the thalamic relay neuron and apply a negative sustained step to demonstrate rebound firing.</p>
+      <h3>What are the current and pulse-length ranges?</h3>
+      <p>In Ion Channels, injected current can be set from −100 to 200 µA/cm², and a single-step pulse can last up to 300 ms. The input plot preserves vertical breathing room while reflecting the selected input amplitude.</p>
+      <h3>Can I compare before and after changing a condition?</h3>
+      <p>On supported screens, hold the current graph before changing a parameter. The legend or line style distinguishes the standard, held, and current conditions.</p>
+      <h3>Should changing injected current mark the cell set as Custom?</h3>
+      <p>No. Injected current and pulse length are stimulus settings, not part of the cell parameter set. Custom appears after changing channel availability or maximum conductance. If stimulus-only changes still select Custom, update to the latest version and contact us with the steps needed to reproduce it.</p>
+      <h3>Experiment &amp; Comparison Mode is unavailable on another device</h3>
+      <p>Sign in to the App Store with the Apple Account used for the purchase, then choose Restore Purchases. Apple StoreKit processes the purchase and manages purchase status.</p>
+      <h3>Can I use these results for diagnosis or treatment decisions?</h3>
+      <p>No. All models, including disease-related conditions, are simplified comparisons of electrophysiological mechanisms. They do not reproduce an individual patient’s condition, and the app is not a medical device.</p>
+      <h3>I have a correction or model suggestion</h3>
+      <p>Please include the model, cell or condition, changed parameters, expected behavior, and relevant literature. We will review the report and improve the model or explanation where appropriate.</p>
+      <h3>Does the app transmit my data?</h3>
+      <p>No simulation values or usage history are sent to the developer. There are no user accounts, ads, or analytics. See the <a href="/en/apps/action-potential-dynamics/privacy/">Privacy Policy</a> for details.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>For a bug report, do not include personal information. Please send the app Version and Build, device and OS, simulation name, selected cell or condition, changed parameters, steps leading to the issue, and a screenshot when possible.</p>
+      <div class="contact-box"><strong>Action Potential Dynamics Support</strong><br>Operator: Takashi Nakano<br>Email: <a href="mailto:nakano.prog@gmail.com">nakano.prog@gmail.com</a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><p class="footer-copy">© <span data-current-year>2026</span> Takashi Nakano.</p><div class="footer-links"><a href="/en/apps/action-potential-dynamics/">Action Potential Dynamics</a><a href="/en/apps/action-potential-dynamics/privacy/">Privacy</a></div></div></footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
