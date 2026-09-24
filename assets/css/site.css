@@ -736,9 +736,27 @@ button:focus-visible {
 }
 
 .simulator-screenshot-grid .shot img {
-  width: auto;
-  max-width: 100%;
-  max-height: 720px;
+  width: 100%;
+  max-width: 420px;
+  max-height: none;
+}
+
+.simulator-screenshot-grid .shot {
+  width: 100%;
+}
+
+.simulator-screenshot-grid .shot figcaption {
+  max-width: 420px;
+  margin-inline: auto;
+  text-align: left;
+  line-height: 1.55;
+}
+
+.simulator-screenshot-grid .shot figcaption strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+  font-size: 1rem;
 }
 
 .shot {
@@ -1019,6 +1037,7 @@ button:focus-visible {
   .app-card,
   .app-card.featured { grid-column: span 6; }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .simulator-screenshot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .document-layout {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1066,7 +1085,8 @@ button:focus-visible {
   .page-title { font-size: clamp(2.6rem, 13vw, 4.5rem); }
   .feature-grid,
   .split { grid-template-columns: 1fr; }
-  .screenshot-grid { grid-template-columns: 1fr; }
+  .screenshot-grid,
+  .simulator-screenshot-grid { grid-template-columns: 1fr; }
   .shot:first-child { grid-row: auto; }
   .shot.phone img { width: min(76vw, 320px); }
   .shot.portrait img { width: min(86vw, 420px); }
