@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WGG0H4V0H0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WGG0H4V0H0');
+  </script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirements, basic use, what to observe in each simulation, frequently asked questions, and contact information for NeuroPhysMatrix.">
+  <title>NeuroPhysMatrix Support</title>
+  <link rel="canonical" href="https://nakano-lab.github.io/en/apps/NeuroPhysMatrix/support/">
+  <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/NeuroPhysMatrix/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/NeuroPhysMatrix/support/">
+  <link rel="icon" href="/assets/images/NeuroPhysMatrix/icon.png"><link rel="stylesheet" href="/assets/css/site.css"><link rel="stylesheet" href="/assets/css/neurophysmatrix.css">
+</head>
+<body class="neurophysmatrix-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation"><a class="brand" href="/en/"><span class="brand-mark">N</span><span>Nakano Lab Software</span></a><div class="nav-links"><a href="/en/apps/NeuroPhysMatrix/">NeuroPhysMatrix</a><a href="https://apps.apple.com/app/id6798524754" rel="external">App Store</a><a href="/en/apps/NeuroPhysMatrix/privacy/">Privacy</a><a class="language-link" href="/ja/apps/NeuroPhysMatrix/support/" lang="ja" data-language-link="ja">日本語</a></div></nav></header>
+  <main id="main" class="container document-layout">
+    <aside class="doc-nav" aria-label="On this page"><strong>On this page</strong><a href="#requirements">Requirements</a><a href="#start">Getting started</a><a href="#editing">Circuits &amp; dendrites</a><a href="#observe">What to observe</a><a href="#models">Model scope</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></aside>
+    <article class="document">
+      <p class="breadcrumbs"><a href="/en/">Nakano Lab Software</a> / <a href="/en/apps/NeuroPhysMatrix/">NeuroPhysMatrix</a> / Support</p>
+      <h1>NeuroPhysMatrix<br>Support</h1>
+      <p class="updated">Updated: October 7, 2026</p>
+      <p>NeuroPhysMatrix is an iPhone, iPad, and Mac simulator that connects ion movement, channel state, conductance, current, and membrane voltage at the same model time. It contains six screens: Action Potential, Neuronal Firing Characteristics, Ion Channels, Neural Circuits, Synaptic Integration, and Axon Conduction.</p>
+
+      <h2 id="requirements">System requirements</h2>
+      <ul><li>iPhone and iPad: iOS/iPadOS 17 or later</li><li>Mac: macOS 14 or later</li></ul>
+      <p>The interface supports English, Japanese, Korean, Simplified and Traditional Chinese, Spanish, French, German, Italian, and Brazilian Portuguese. It follows the preferred language order on your device.</p>
+
+      <h2 id="start">Getting started</h2>
+      <ol>
+        <li>Choose a simulation from the tab row at the top. Scroll the row horizontally when all tabs do not fit.</li>
+        <li>In workspaces with playback, such as Action Potential and Axon Conduction, start or pause playback and choose a speed.</li>
+        <li>Move the time cursor below the graph to align particle positions, channel gates, traces, and explanations at any recorded instant.</li>
+        <li>On iPhone, portrait iPad, or a narrow window, tap Settings &amp; Guide to open the settings and explanations in a scrollable panel. On Mac and wider iPad landscape layouts, switch between Settings and Guide in the right panel. The smaller sheet keeps results visible and interactive behind it; drag it upward to read more. Information buttons explain individual settings.</li>
+        <li>Use Visible Range near the time axis to zoom in or out. With Pro, where trace hold is available, keep the current result before changing a condition, then overlay the before-and-after traces.</li>
+        <li>Use Reset to return the selected simulation to its initial state.</li>
+      </ol>
+
+      <h3>Pro</h3>
+      <p>Pro is a US$7.99 one-time purchase in the United States storefront; other storefronts use the corresponding price shown by the App Store. It records up to 50 conditions and key measurements across all six simulations, compares the latest two results from the same simulation numerically, and exports all records as CSV. It also unlocks custom circuit and dendrite editing and saving/loading, action-potential conductance controls and standard-trace comparison, held ion-channel and dendritic traces, and five specialized neuron profiles. All six core simulations, four foundational neuron profiles, four circuit presets, and the standard dendrite plus four representative morphologies remain free. Existing Pro customers do not need to purchase again. To restore, sign in with the original Apple Account, open the Pro/lock button in the top bar, and tap the distinct Restore Purchases button at the bottom of the purchase sheet. With Pro active, the top-bar button opens the Experiment Log.</p>
+      <p><a class="button primary" href="https://apps.apple.com/app/id6798524754" rel="external">Download on the App Store <span aria-hidden="true">↗</span></a></p>
+
+      <h2 id="editing">Circuits, dendrites, and synaptic inputs</h2>
+      <p>Presets are placed near their diagrams. Edit Circuit and Edit Dendrites are Pro features. Click or tap a node to select it, then drag between nodes to change a circuit connection or dendritic parent. There is no separate selection/connection mode to enable.</p>
+      <p>Place an excitatory or inhibitory input by dragging its input card onto a node, or select a node and tap its input card. A dashed marker shows the inhibitory site even when inhibition is off. Change input number, strength, and timing in Settings. Auxiliary menus also allow location selection.</p>
+      <p>Pro circuits support up to 12 cells; dendrites support a soma plus up to 12 compartments. Changing length or diameter also changes passive electrical properties. Use Save / Load to name and save a circuit or morphology together with input conditions, with up to 50 configurations of each kind.</p>
+
+      <h2 id="observe">What to observe in each simulation</h2>
+      <h3>Action Potential</h3>
+      <p>Follow the early rise of Na⁺ conductance and the delayed rise of K⁺ conductance, aligned with V, g, and I. In paired-pulse experiments, shorten the interval and inspect the second response. Use strength–duration curves to relate pulse duration to the firing threshold, and sodium recovery to inspect recovery of the inactivation gate h.</p>
+      <h3>Neuronal Firing Characteristics</h3>
+      <p>The cell selector states both the characteristic and the point to observe. Compare adaptation in the cortical pyramidal neuron, short stable intervals in the fast-spiking interneuron, the hyperpolarized resting level and delayed first spike of the medium spiny neuron, and autonomous firing with accommodation in the cholinergic neuron. The hippocampal CA1 profile shows stronger adaptation, the thalamic relay profile rebound after negative input, the thalamic reticular profile a low-threshold burst, the midbrain dopaminergic profile low-frequency regular firing, and the Purkinje profile a high-rate response to relatively modest input.</p>
+      <h3>Ion Channels</h3>
+      <p>Under current clamp, relate injected current to the sequence of changes in V and each g. Under voltage clamp, align the compact V-command plot with separately displayed g and I. Operate 14 representative channels and background currents, including SK current. Cell parameter sets switch representative channel compositions. DC holding current and step current are separate settings; Iinj shows their sum. Normalized conductance is not open probability.</p>
+      <h3>Neural Circuits</h3>
+      <p>In the four presets, change excitatory/inhibitory strengths, delays, and inhibition. Inspect the relative arrival of excitation and inhibition in feedforward inhibition, returning inhibition in recurrent circuits, and how inhibiting an inhibitory cell changes downstream activity in disinhibition. E/I labels are cell IDs within the diagram, not anatomical proper names.</p>
+      <h3>Synaptic Integration</h3>
+      <p>Change location, simultaneous input count, and repetition interval to compare attenuation toward the soma and temporal/spatial summation. Compare inhibitory location and timing. Choose the standard two-branch model or schematic pyramidal, Purkinje, granule, and spiny stellate morphologies. This passive model does not generate action potentials.</p>
+      <h3>Axon Conduction</h3>
+      <p>Match each node of Ranvier in the diagram to its voltage peak. In focal demyelination, follow how current leakage lowers depolarization and safety factor at the next node, producing delay or failure under severe conditions. “Node 1” through “Node 7” indicate sequential positions in this simplified axon; they are not anatomical proper names. In unmyelinated mode, positions 1–7 are recording sites, not nodes of Ranvier. Treat the traces and conduction timing as a schematic model.</p>
+
+      <h2 id="models">Model scope</h2>
+      <p>Action Potential uses the classical Hodgkin–Huxley model, not a quantitative model of every mammalian neuron. Neuronal Firing compares firing rate, adaptation, delay, and rebound; spike peaks and shapes are display templates. Identically named Ion Channel profiles are separate representative models, not exact decompositions of the firing traces.</p>
+      <p>Dendrites use a coarse passive cable approximation without active channels, NMDA spikes, backpropagating action potentials, or quantitative reconstructions of measured morphologies. Circuits and axons are also schematic comparisons of circuit principles and conduction changes. Consult Graph Reading and the Guide in each workspace.</p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <h3>The graph or particles do not move</h3>
+      <p>Check whether playback is paused and press Play. Moving the time cursor manually may pause playback. If the screen still does not update, reset the simulation and restart the app.</p>
+      <h3>I cannot see the delayed response in the cholinergic profile</h3>
+      <p>In Ion Channels, select the cholinergic profile and return Visible Range to its initial overview so that time after stimulus offset is included. Widen the range if needed; no separate display start time is required. In Neuronal Firing, select the thalamic relay profile and apply a negative sustained step to demonstrate rebound firing.</p>
+      <h3>What are the current and pulse-length ranges?</h3>
+      <p>In Ion Channels, step current can be set from −100 to 200 µA/cm², and a single-step pulse can last up to 300 ms. DC holding current is configured separately. The input plot preserves vertical breathing room while reflecting the selected input amplitude.</p>
+      <h3>Can I compare before and after changing a condition?</h3>
+      <p>On supported screens, hold the current graph before changing a parameter. The legend or line style distinguishes the standard, held, and current conditions.</p>
+      <h3>Should changing injected current mark the cell set as Custom?</h3>
+      <p>No. Injected current and pulse length are stimulus settings, not part of the cell parameter set. Custom appears after changing channel availability or maximum conductance. If stimulus-only changes still select Custom, update to the latest version and contact us with the steps needed to reproduce it.</p>
+      <h3>Pro is unavailable on another device</h3>
+      <p>Sign in to the App Store with the Apple Account used for the purchase. When Pro is not active, open the Pro/lock button in the top bar and tap Restore Purchases at the bottom of the purchase sheet. This button starts restoration explicitly; you do not have to rely on the automatic check at launch. Apple StoreKit manages purchase status.</p>
+      <h3>Are saved configurations automatically synced to other devices?</h3>
+      <p>No automatic cloud sync is provided. Configurations and experiment records are stored per device; restoring Pro purchase rights is separate from syncing data. You can save up to 50 experiment records in total and up to 50 configurations of each kind (circuits and dendrites).</p>
+      <h3>Can I use these results for diagnosis or treatment decisions?</h3>
+      <p>No. All models, including disease-related conditions, are simplified comparisons of electrophysiological mechanisms. They do not reproduce an individual patient’s condition, and the app is not a medical device.</p>
+      <h3>I have a correction or model suggestion</h3>
+      <p>Please include the model, cell or condition, changed parameters, expected behavior, and relevant literature. We will review the report and improve the model or explanation where appropriate.</p>
+      <h3>Does the app transmit my data?</h3>
+      <p>No simulation values or usage history are sent to the developer. The App has no user accounts, ads, or analytics SDKs. See the <a href="/en/apps/NeuroPhysMatrix/privacy/">Privacy Policy</a> for details.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>For a bug report, do not include personal information. Please send the app Version and Build, device and OS, simulation name, selected cell or condition, changed parameters, steps leading to the issue, and a screenshot when possible.</p>
+      <div class="contact-box"><strong>NeuroPhysMatrix Support</strong><br>Operator: Takashi Nakano<br>Email: <a href="mailto:nakano.prog@gmail.com">nakano.prog@gmail.com</a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><p class="footer-copy">© <span data-current-year>2026</span> Takashi Nakano.</p><div class="footer-links"><a href="https://apps.apple.com/app/id6798524754" rel="external">App Store</a><a href="/en/apps/NeuroPhysMatrix/">NeuroPhysMatrix</a><a href="/en/apps/NeuroPhysMatrix/privacy/">Privacy</a></div></div></footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
