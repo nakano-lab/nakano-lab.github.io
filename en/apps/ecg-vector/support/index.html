@@ -10,7 +10,7 @@
     gtag('config', 'G-WGG0H4V0H0');
   </script>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ECG Vector help for basic controls, reading the 3D view, waveform breakdown, Free and Pro access, purchase restoration, troubleshooting, and contact.">
+  <meta name="description" content="ECG Vector 1.3 help: 3D and 2D projections, waveform breakdown, ions, ventricular action potentials, cardiac rhythm, Free and Pro access, purchase restoration, and contact.">
   <title>ECG Vector Support</title>
   <link rel="canonical" href="https://nakano-lab.github.io/en/apps/ecg-vector/support/">
   <link rel="alternate" hreflang="ja" href="https://nakano-lab.github.io/ja/apps/ecg-vector/support/"><link rel="alternate" hreflang="en" href="https://nakano-lab.github.io/en/apps/ecg-vector/support/">
@@ -20,21 +20,23 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation"><a class="brand" href="/en/"><span class="brand-mark">N</span><span>Nakano Lab Software</span></a><div class="nav-links"><a href="/en/apps/ecg-vector/">ECG Vector</a><a href="https://apps.apple.com/app/ecg-vector/id6798066790">App Store</a><a href="/en/apps/ecg-vector/privacy/">Privacy</a><a class="language-link" href="/ja/apps/ecg-vector/support/" lang="ja" data-language-link="ja">日本語</a></div></nav></header>
   <main id="main" class="container document-layout">
-    <aside class="doc-nav" aria-label="On this page"><strong>On this page</strong><a href="#start">Getting started</a><a href="#reading">Reading the 3D view</a><a href="#breakdown">Breakdown and two-lead comparison</a><a href="#display">Display and view</a><a href="#ion">Ion &amp; ECG</a><a href="#conditions">ECG &amp; Conditions</a><a href="#pro">Free and Pro</a><a href="#troubleshooting">Troubleshooting</a><a href="#contact">Contact</a></aside>
+    <aside class="doc-nav" aria-label="On this page"><strong>On this page</strong><a href="#start">Getting started</a><a href="#reading">Reading the 3D and 2D views</a><a href="#breakdown">Breakdown and two-lead comparison</a><a href="#display">Display and view</a><a href="#ion">Ion &amp; ECG</a><a href="#cell">Ventricular Action Potential</a><a href="#rhythm">Cardiac Rhythm</a><a href="#conditions">ECG &amp; Conditions</a><a href="#pro">Free and Pro</a><a href="#troubleshooting">Troubleshooting</a><a href="#contact">Contact</a></aside>
     <article class="document">
       <p class="breadcrumbs"><a href="/en/">Nakano Lab Software</a> / <a href="/en/apps/ecg-vector/">ECG Vector</a> / Support</p>
       <h1>ECG Vector<br>Support</h1>
-      <p class="updated">Updated October 4, 2026 · Requires macOS 14+ or iOS/iPadOS 17+</p>
+      <p class="updated">Updated October 9, 2026 · Requires macOS 14+ or iOS/iPadOS 17+</p>
+      <p>This guide includes features in the upcoming 1.3 update. Check the App Store for availability in the currently released version.</p>
       <p>ECG Vector is an educational simulator for learning how electrical activity in the heart relates to the waveform recorded by each lead. Do not use it for diagnosis, treatment decisions, or patient-specific waveform prediction.</p>
 
       <h2 id="start">1. Getting started</h2>
-      <ol><li>Choose ECG Mechanism, Ion &amp; ECG, ECG &amp; Conditions, or Learn &amp; Quiz. Use the top tabs on Mac and iPad, or the feature menu shown at launch on iPhone. On iPhone, the upper-left back button returns to the feature menu.</li><li>In ECG Mechanism, choose Adult Normal, Right Bundle Branch Block, Pediatric Normal, or another typical pattern under Waveform Model.</li><li>Select a waveform card in the 12-lead overview. That lead becomes the 3D lead axis and enlarged trace.</li><li>Select Play, then choose 0.05× to 1.0× under Speed. Dragging the timeline pauses playback and moves every waveform cursor to the selected time.</li><li>Use the two 10 ms controls to step backward or forward while paused.</li><li>Drag the 3D view to rotate it, and pinch or scroll to zoom. Select Reset View to return to the standard orientation.</li></ol>
+      <ol><li>Choose ECG Mechanism, Ion &amp; ECG, Ventricular Action Potential, Cardiac Rhythm, ECG &amp; Conditions, or Learn &amp; Quiz. Use the top tabs on Mac and iPad, or the feature menu shown at launch on iPhone. On iPhone, the upper-left back button returns to the feature menu.</li><li>In ECG Mechanism, choose Adult Normal, Right Bundle Branch Block, Pediatric Normal, or another typical pattern under Waveform Model.</li><li>In one- and two-lead modes, choose leads inside the 3D panel. In the 12-lead overview, select a waveform card to change the selected lead.</li><li>Select Play, then choose 0.05× to 1.0× under Speed. Dragging the timeline pauses playback and moves every waveform cursor to the selected time.</li><li>Use the two 10 ms controls to step backward or forward while paused.</li><li>Drag the 3D view to rotate it, and pinch or scroll to zoom. Select Reset View to return to the standard orientation.</li></ol>
 
-      <h2 id="reading">2. Reading the 3D view</h2>
-      <h3>Excitation and repolarization</h3><p>The yellow luminous trail approximates the depolarization wavefront. The pink trail approximates ventricular repolarization—the electrical recovery associated with the T wave, not a second excitation.</p>
-      <h3>Microdipoles and the cardiac vector</h3><p>Relative extracellular − and + regions appear across a wavefront. Each local arrow points from − to + and represents a microdipole. Components in the same direction add, opposing components cancel, and the remaining orange arrow is the cardiac vector M(t).</p>
-      <h3>Lead axis and projection</h3><p>Lead axis L points from the negative to the positive electrode. The projection arrow shows the component of M(t) along that axis: toward the positive electrode gives an upward deflection, and the opposite direction gives a downward deflection. Its length is the magnitude of the projection onto the unit direction; ECG voltage V(t) = M(t) · L also includes lead sensitivity. Two-lead comparison uses different colors for each lead axis and its projection.</p>
-      <h3>Contraction</h3><p>Shortening and slight twisting of the atria and ventricles represent mechanical contraction. Contraction follows electrical depolarization with a delay and is not added as a separate ECG voltage component.</p>
+      <h2 id="reading">2. Reading the 3D and 2D views</h2>
+      <h3>Excitation and repolarization</h3><p>Yellow bands schematically show depolarization, while pink bands show ventricular repolarization. Spreading atrial activation is distinguished from septal bundles and a branching ventricular conduction network. Repolarization is not a second excitation.</p>
+      <h3>The cardiac vector and its components</h3><p>One orange arrow shows either the sum of all components or the selected component. It points from − at its base to + at its tip, not along a literal path of electric current. The direction guide explains each contribution. Opposing contributions can cancel, so a small resultant does not necessarily mean the whole heart is inactive.</p>
+      <h3>Lead axis and projection</h3><p>A light lead axis points from the negative to the positive electrode; a darker projection arrow of the same hue lies directly on that axis. Projection toward the positive electrode gives an upward deflection, and the opposite direction gives a downward deflection. Arrow length and sign represent projection onto the unit lead axis; ECG voltage also multiplies that projection by lead sensitivity. Two-lead mode distinguishes the leads with green and purple hues.</p>
+      <p>The adjacent 2D diagrams align each lead’s positive direction upward to show the cardiac vector and its projection. In two-lead mode, both diagrams compare the same source vector at the same scale.</p>
+      <h3>Contraction</h3><p>Local atrial and ventricular shortening schematically represents mechanical contraction. It follows electrical depolarization with a delay and is not added as a separate ECG voltage component. The heart wall, internal structures, and conduction paths move with the same deformation.</p>
 
       <h2 id="breakdown">3. Waveform breakdown and two-lead comparison</h2>
       <p>At the top of ECG Mechanism, choose the one-lead, two-lead, or 12-lead mode. One-lead mode enlarges the selected trace and offers component breakdown. Two-lead mode compares the waveforms and 3D lead-axis projections at the same time. The 12-lead mode shows synchronized standard ECG traces.</p>
@@ -43,6 +45,7 @@
 
       <h2 id="display">4. Display items, cutaway, and opacity</h2>
       <p>Open Display inside the 3D panel to switch between Cutaway and Exterior and independently show or hide the heart, internal structures, conduction system, electrical activity, mechanical contraction, lead measurement, and electrodes. Heart opacity is in the same panel.</p>
+      <p>The cutaway retains a faint front wall at 8% opacity to make the conduction paths’ depth clearer. The initial view fits the heart. Drag the divider between 3D and waveforms to adjust their space, or double-click/double-tap it to restore the default proportions.</p>
       <ul><li>The default is Cutaway, with internal structures and electrodes hidden.</li><li>Selecting a legend entry highlights the matching element in 3D.</li><li>The orientation compass uses the patient’s right, left, superior, inferior, anterior, and posterior directions.</li><li>The front electrode map faces the patient: screen left is the patient’s right.</li></ul>
       <p>A standard 12-lead ECG uses 10 electrodes: RA, LA, LL, RL, and V1–V6. RL is the neutral electrode, not part of the standard lead-voltage differences or Wilson central terminal. Moving RL does not change the idealized ECG in this app; the instrument’s noise-rejection circuitry is not simulated.</p>
 
@@ -52,24 +55,32 @@
       <p>Quantitative model output separates cellular calculations, including Nernst equilibrium potentials, from educational whole-heart ECG estimates. The direct ECG effect of Na⁺ alone is generally small within usual clinical ranges, so the trace may change very little. The direct repolarization effect of pH alone is not assigned a fixed direction and is marked as unmodeled.</p>
       <p>This is not a patient-specific prediction model. The displayed model ranges are neither physiological normal ranges nor confidence intervals. Use the app’s information button to read About for the modeling limitations and educational-use notice.</p>
 
-      <h2 id="conditions">6. ECG &amp; Conditions</h2>
-      <p>Choose a condition or reference example, then compare it with Adult Normal in one or 12 leads. Read the waveform features and their mechanisms while using the common time scale to identify differences. In the 12-lead comparison, I, II, III, aVR, aVL, and aVF form the left column, and V1–V6 form the right.</p>
-      <p>Pediatric Normal is a representative child around age five. The fever example shows sinus tachycardia, and the higher-BMI example illustrates population-level body-habitus tendencies—not a prediction from an individual’s temperature or weight alone. Condition examples are not diagnostic criteria.</p>
+      <h2 id="cell">6. Ventricular Action Potential</h2>
+      <p>Observe membrane voltage, ion currents, and gates at the same time in the Luo–Rudy I (1991) single-ventricular-cell model. Adjust stimulus strength or pause at the sodium-current peak. The standard model and stimulus adjustment are free.</p>
+      <p>Pro adds conductance adjustment, current-suppression experiments, and standard-trace overlays. This workspace teaches a single cell’s action potential; it does not directly calculate a surface ECG or clinical QT interval.</p>
 
-      <h2 id="pro">7. Free access and ECG Vector Pro</h2>
-      <p>The free version includes Adult Normal and Right Bundle Branch Block, all 12 standard ECG leads, fixed standard electrode positions, comparison and quiz samples, favorites, and four guided Ion &amp; ECG examples.</p>
-      <p>ECG Vector Pro is a one-time non-consumable purchase, not a subscription. It unlocks free adjustment of ion currents, extracellular ions, and pH with synchronized 12-lead response, pediatric and other condition examples, custom leads, electrode editing and misplacement presets, and the complete comparison and quiz libraries.</p>
+      <h2 id="rhythm">7. Cardiac Rhythm</h2>
+      <p>View representative membrane voltages and arrival times for the sinus node, atria, AV node, Purkinje fibers, and ventricle. Adjust sinus cycle, conduction speed, and AV delay, or select schematic bradycardia, tachycardia, and AV-block examples. All features are free.</p>
+      <p>These schematic regional voltage templates are not surface ECG traces. The AV-delay setting is not the PR interval itself, and the 2:1 AV-conduction example does not distinguish Mobitz I from Mobitz II.</p>
+
+      <h2 id="conditions">8. ECG &amp; Conditions</h2>
+      <p>Choose a condition or reference example, then compare it with Adult Normal in one or 12 leads. Read the waveform features and their mechanisms while using the common time scale to identify differences. In the 12-lead comparison, I, II, III, aVR, aVL, and aVF form the left column, and V1–V6 form the right.</p>
+      <p>Pediatric Normal is a representative child around age five. The fever example shows a heart-rate increase, and the higher-BMI example illustrates population-level body-habitus tendencies—not a prediction from an individual’s temperature or weight alone. Condition examples are not diagnostic criteria. Model and lead selections remain independent between this workspace and ECG Mechanism.</p>
+
+      <h2 id="pro">9. Free access and ECG Vector Pro</h2>
+      <p>The free version includes Adult Normal and Right Bundle Branch Block, all 12 standard leads, fixed standard electrodes, comparison and quiz samples, favorites, and four guided Ion &amp; ECG examples. The standard ventricular action-potential model, stimulus adjustment, and all Cardiac Rhythm features are also free.</p>
+      <p>ECG Vector Pro is a one-time non-consumable purchase. It includes custom ion-current, extracellular-ion, and pH adjustments with synchronized 12-lead response, pediatric and other patterns, custom leads, electrode editing and misplacement, the full comparison and quiz libraries, plus ventricular conductance adjustment, suppression experiments, and standard-trace comparison. These additions are included in the existing Pro purchase; no new purchase or subscription is required.</p>
       <h3>Purchase Pro</h3><ol><li>Select the crown or PRO control in the top bar.</li><li>Wait for Apple to load the localized price.</li><li>Select the price button and complete Apple’s purchase sheet.</li></ol>
       <h3>Restore a purchase</h3><p>On a Mac, iPhone, or iPad signed in with the Apple Account used for purchase, open the Pro screen and select Restore Purchases. Syncing across devices can take a short time.</p>
 
-      <h2 id="troubleshooting">8. Troubleshooting</h2>
+      <h2 id="troubleshooting">10. Troubleshooting</h2>
       <h3>Only Reload Purchase Information and Restore Purchases are shown</h3><p>StoreKit has not loaded the product. Check your connection, confirm that the App Store is signed in, update ECG Vector, and confirm that the purchase is available in your country or region. Wait briefly, then select Reload Purchase Information. Purchases in TestFlight builds are handled in Apple’s test environment.</p>
       <h3>Pro is not active after purchase</h3><p>Confirm that you are using the same Apple Account, select Restore Purchases, then quit and reopen the app. A pending purchase activates after Apple approves it.</p>
       <h3>The 3D view is slow</h3><p>Open Display and hide internal structures, electrodes, or other overlays you do not need. Close the explanation and other demanding apps, then reopen ECG Vector.</p>
       <h3>The top items in the Display panel cannot be selected</h3><p>Update to the latest app version. The panel should remain fixed on screen while its contents scroll. If the issue remains, contact support with the device model, display zoom, and orientation.</p>
       <h3>Change the interface language</h3><p>ECG Vector follows the device or per-app language. Open Settings → ECG Vector → Language and choose a supported language.</p>
 
-      <h2 id="contact">9. Contact</h2>
+      <h2 id="contact">11. Contact</h2>
       <p>Do not include patient or personal information in a report. Include the ECG Vector version and build, device and OS, selected waveform model and lead, steps leading to the issue, and any message shown.</p>
       <div class="contact-box"><strong>ECG Vector Support</strong><br>Operator: Takashi Nakano<br>Email: <a href="mailto:nakano.prog@gmail.com">nakano.prog@gmail.com</a></div>
     </article>
