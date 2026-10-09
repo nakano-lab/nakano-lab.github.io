@@ -1,0 +1,15 @@
+/* Keep the mixed-device gallery aligned without changing other app pages. */
+.ecg-screenshots {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.ecg-screenshots .shot:first-child {
+  grid-row: auto;
+}
+
+@media (max-width: 680px) {
+  .ecg-screenshots {
+    grid-template-columns: 1fr;
+  }
+}
