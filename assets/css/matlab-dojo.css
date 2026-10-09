@@ -1,0 +1,113 @@
+.matlab-dojo-page {
+  --red: #176054;
+  --red-dark: #124b42;
+  --red-soft: #edf5ef;
+  background:
+    radial-gradient(circle at 8% -5%, rgba(179, 164, 100, 0.13), transparent 28rem),
+    radial-gradient(circle at 92% 8%, rgba(54, 104, 137, 0.08), transparent 26rem),
+    var(--paper);
+}
+
+.matlab-dojo-page .product-icon {
+  box-shadow: 0 24px 58px rgba(65, 76, 41, 0.14);
+}
+
+.matlab-dojo-page .page-title {
+  letter-spacing: -0.045em;
+}
+
+.matlab-dojo-page .launch-note {
+  display: inline-flex;
+  margin: 24px 0 0;
+  padding: 8px 15px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--red-dark);
+  background: var(--red-soft);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.matlab-dojo-page .belt-label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--red-dark);
+  font-weight: 750;
+  font-size: 0.85rem;
+}
+
+.matlab-dojo-page .matlab-gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 34px 24px;
+}
+
+.matlab-dojo-page .matlab-gallery .shot:first-child {
+  grid-row: auto;
+}
+
+.matlab-dojo-page .matlab-gallery .shot img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+}
+
+.matlab-dojo-page .matlab-gallery figcaption {
+  text-align: left;
+}
+
+.matlab-dojo-page .matlab-gallery figcaption strong {
+  display: block;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.matlab-dojo-page [id] {
+  scroll-margin-top: 100px;
+}
+
+.matlab-dojo-page .english-summary {
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+.matlab-dojo-page .trademark-note {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.matlab-dojo-page .document {
+  overflow-wrap: anywhere;
+}
+
+.matlab-dojo-page .notice a,
+.matlab-dojo-page .english-summary a {
+  color: var(--red-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.matlab-dojo-page .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 920px) {
+  .matlab-dojo-page .matlab-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .matlab-dojo-page .matlab-gallery {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  .matlab-dojo-page .page-title {
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+  }
+}
