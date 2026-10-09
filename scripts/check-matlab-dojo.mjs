@@ -17,6 +17,7 @@ for (const suffix of ['', 'support/', 'privacy/']) {
   const file = fileFor(url);
   const html = await read(file);
   assert(html.includes('<html lang="ja">'), `Wrong document language: ${file}`);
+  assert(html.includes('<meta name="robots" content="noindex, follow">'), `Review page must remain unindexed: ${file}`);
   assert(html.includes(`rel="canonical" href="${origin}${url}"`), `Wrong canonical: ${file}`);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1, `Expected one h1: ${file}`);
   assert(html.includes('id="english" lang="en"'), `English section missing: ${file}`);
@@ -59,11 +60,30 @@ for (const term of ['AdMob', 'UMP', 'IPアドレス', '非パーソナライズ'
 assert(!privacy.includes('データ収集を行いません'), 'Misleading blanket no-collection statement');
 
 const home = await read('ja/index.html');
-assert(home.includes(`href="${base}"`), 'Home page entry missing');
+assert(!home.includes('MATLABdojo') && !home.includes('MATLAB道場'), 'Review app must not appear on the home page');
 const sitemap = await read('sitemap.xml');
-for (const suffix of ['', 'support/', 'privacy/']) {
-  assert(sitemap.includes(`<loc>${origin}${base}${suffix}</loc>`), `Sitemap URL missing: ${suffix}`);
+assert(!sitemap.includes(base), 'Review pages must not appear in the sitemap');
+// Inspect every public HTML page, including the English home page and legacy redirects.
+async function htmlFiles(directory = '') {
+  const files = [];
+  for (const entry of await fs.readdir(path.join(root, directory), { withFileTypes: true })) {
+    if (entry.name.startsWith('.') || entry.name === 'node_modules') continue;
+    const relative = path.posix.join(directory, entry.name);
+    if (entry.isDirectory()) files.push(...await htmlFiles(relative));
+    else if (entry.isFile() && entry.name.endsWith('.html')) files.push(relative);
+  }
+  return files;
+}
+let unlinkedPages = 0;
+for (const file of await htmlFiles()) {
+  if (file.startsWith(base.slice(1))) continue;
+  const html = await read(file);
+  for (const [, raw] of html.matchAll(/\b(?:href|src|content)="([^"]+)"/g)) {
+    const target = new URL(raw.replaceAll('&amp;', '&'), origin + '/' + file);
+    assert(target.origin !== origin || !target.pathname.startsWith(base), `Public page links to review app: ${file} → ${raw}`);
+  }
+  unlinkedPages++;
 }
 const ads = await read('app-ads.txt');
 assert(ads.split(/\r?\n/).some(line => /^google\.com,\s*pub-7752394877381464,\s*DIRECT(?:,|$)/.test(line)), 'Wrong app-ads.txt publisher');
-console.log(`PASS: three bilingual pages, six screenshots, scoped styling, contact details, home navigation, sitemap, app-ads.txt and ${references} internal references.`);
+console.log(`PASS: three bilingual review pages with noindex, six screenshots, contact details, no inbound links from ${unlinkedPages} public HTML pages, no home/sitemap listings, app-ads.txt and ${references} internal references.`);
