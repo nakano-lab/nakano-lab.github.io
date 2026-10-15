@@ -25,6 +25,10 @@ for (const suffix of ['', 'support/', 'privacy/']) {
   assert(!/googletagmanager|gtag\(|<iframe\b/.test(html), `Unexpected third-party embed: ${file}`);
   assert(!/https:\/\/apps\.apple\.com\//.test(html), `Unverified App Store link: ${file}`);
   assert(html.includes('公開準備中') || html.includes('in preparation'), `Release status missing: ${file}`);
+  assert(html.includes('プログラミング道場 for MATLAB®') && html.includes('Programming Dojo for MATLAB®'), `App names missing: ${file}`);
+  assert(html.includes('MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See mathworks.com/trademarks for a list of additional trademarks.'), `Trademark notice missing: ${file}`);
+  assert(html.includes('MATLAB® Mobile™') && html.includes('MATLAB® Online™'), `Execution environments missing: ${file}`);
+  assert(html.includes('有効なMATLABライセンス') && html.includes('valid MATLAB license'), `License notice missing: ${file}`);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   assert.equal(new Set(ids).size, ids.length, `Duplicate anchor: ${file}`);
   for (const [, attribute, raw] of html.matchAll(/\b(href|src)="([^"]+)"/g)) {
@@ -48,7 +52,7 @@ for (const suffix of ['', 'support/', 'privacy/']) {
 const product = await read(fileFor(base));
 assert.equal((product.match(/<figure\b/g) ?? []).length, 6, 'Expected six real screenshots');
 assert(product.includes('本編は36修行') && product.includes('111問'), 'Curriculum mismatch');
-assert(product.includes('MATLAB道場内で実行する機能ではありません'), 'Missing external execution limitation');
+assert(product.includes('プログラミング道場 for MATLAB®内で実行する機能ではありません'), 'Missing external execution limitation');
 assert(product.includes('自動採点する機能はありません'), 'Missing self-assessment limitation');
 assert(product.includes('iPadOS 17'), 'Wrong OS requirement');
 
