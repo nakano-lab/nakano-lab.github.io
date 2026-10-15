@@ -16,6 +16,10 @@
   letter-spacing: -0.045em;
 }
 
+html[lang="en"] .matlab-dojo-page .page-title {
+  overflow-wrap: anywhere;
+}
+
 .matlab-dojo-page .launch-note {
   display: inline-flex;
   margin: 24px 0 0;
@@ -101,6 +105,16 @@
 }
 
 @media (max-width: 680px) {
+  html[lang="en"] .matlab-dojo-page .product-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  html[lang="en"] .matlab-dojo-page .product-icon {
+    width: 96px;
+    border-radius: 24px;
+  }
+
   .matlab-dojo-page .matlab-gallery {
     grid-template-columns: 1fr;
     max-width: 420px;
