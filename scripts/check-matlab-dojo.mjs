@@ -23,7 +23,6 @@ for (const suffix of ['', 'support/', 'privacy/']) {
   assert(html.includes('<meta name="robots" content="noindex, follow">'), `Review page must remain unindexed: ${file}`);
   assert(html.includes(`rel="canonical" href="${origin}${url}"`), `Wrong canonical: ${file}`);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1, `Expected one h1: ${file}`);
-  if (language === 'ja') assert(html.includes('id="english" lang="en"'), `Legacy English section missing: ${file}`);
   for (const alternate of ['ja', 'en']) {
     const alternateURL = `/${alternate}/apps/MATLABdojo/${suffix}`;
     assert(html.includes(`hreflang="${alternate}" href="${origin}${alternateURL}"`), `Missing language alternate: ${file}`);
@@ -36,8 +35,7 @@ for (const suffix of ['', 'support/', 'privacy/']) {
   assert(html.includes(language === 'ja' ? 'プログラミング道場 for MATLAB®' : 'Programming Dojo for MATLAB®'), `App name missing: ${file}`);
   assert(html.includes('MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See mathworks.com/trademarks for a list of additional trademarks.'), `Trademark notice missing: ${file}`);
   assert(html.includes('MATLAB® Mobile™') && html.includes('MATLAB® Online™'), `Execution environments missing: ${file}`);
-  assert(html.includes('valid MATLAB license'), `License notice missing: ${file}`);
-  if (language === 'ja') assert(html.includes('有効なMATLABライセンス'), `Japanese license notice missing: ${file}`);
+  assert(html.includes(language === 'ja' ? '有効なMATLABライセンス' : 'valid MATLAB license'), `License notice missing: ${file}`);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   assert.equal(new Set(ids).size, ids.length, `Duplicate anchor: ${file}`);
   for (const [, attribute, raw] of html.matchAll(/\b(href|src)="([^"]+)"/g)) {
