@@ -76,6 +76,11 @@ for (const language of ['ja', 'en']) for (const suffix of ['', 'support/', 'priv
   if (suffix !== 'privacy/') assert(sitemap.includes('<loc>' + target + '</loc><lastmod>2026-10-15</lastmod>'), 'Stale sitemap date');
 }
 for (const language of ['ja', 'en']) {
-  assert(sitemap.includes('<loc>' + origin + '/' + language + '/</loc><lastmod>2026-10-15</lastmod>'), 'Stale home sitemap date');
+  const homeMarker = '<loc>' + origin + '/' + language + '/</loc>';
+  const homeIndex = sitemap.indexOf(homeMarker);
+  assert(homeIndex >= 0, 'Missing home sitemap URL');
+  const homeEntry = sitemap.slice(homeIndex, sitemap.indexOf('</url>', homeIndex));
+  const lastmod = homeEntry.match(/<lastmod>(\d{4}-\d{2}-\d{2})<\/lastmod>/)?.[1];
+  assert(lastmod && lastmod >= '2026-10-15', 'Stale home sitemap date');
 }
 console.log('PASS: bilingual 1.3 release, six screenshots per language, support/privacy, App Store links, sitemap, and ' + references + ' internal references.');

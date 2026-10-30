@@ -20,7 +20,8 @@ for (const suffix of ['', 'support/', 'privacy/']) {
   const file = fileFor(url);
   const html = await read(file);
   assert(html.includes(`<html lang="${language}">`), `Wrong document language: ${file}`);
-  assert(html.includes('<meta name="robots" content="noindex, follow">'), `Review page must remain unindexed: ${file}`);
+  assert(html.includes('<meta name="robots" content="index, follow">'), `Released page must allow indexing: ${file}`);
+  assert(!/noindex/i.test(html), `Released page is excluded from indexing: ${file}`);
   assert(html.includes(`rel="canonical" href="${origin}${url}"`), `Wrong canonical: ${file}`);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1, `Expected one h1: ${file}`);
   for (const alternate of ['ja', 'en']) {
@@ -30,8 +31,10 @@ for (const suffix of ['', 'support/', 'privacy/']) {
   }
   assert(!/\{\{|\}\}|TODO|TBD/.test(html), `Placeholder: ${file}`);
   assert(!/googletagmanager|gtag\(|<iframe\b/.test(html), `Unexpected third-party embed: ${file}`);
-  assert(!/https:\/\/apps\.apple\.com\//.test(html), `Unverified App Store link: ${file}`);
-  assert(html.includes('公開準備中') || html.includes('in preparation'), `Release status missing: ${file}`);
+  assert(!/公開準備中|in preparation/.test(html), `Pre-release wording remains: ${file}`);
+  const storeLinks = [...html.matchAll(/href="(https:\/\/apps\.apple\.com\/[^"]+)"/g)].map(match => match[1]);
+  assert(storeLinks.length > 0, `Released app needs an App Store link: ${file}`);
+  for (const link of storeLinks) assert(new URL(link).pathname.endsWith('/id6801966322'), `Wrong App Store app: ${file}`);
   assert(html.includes(language === 'ja' ? 'プログラミング道場 for MATLAB®' : 'Programming Dojo for MATLAB®'), `App name missing: ${file}`);
   assert(html.includes('MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See mathworks.com/trademarks for a list of additional trademarks.'), `Trademark notice missing: ${file}`);
   assert(html.includes('MATLAB® Mobile™') && html.includes('MATLAB® Online™'), `Execution environments missing: ${file}`);
@@ -82,33 +85,23 @@ for (const term of ['AdMob', 'UMP', 'IPアドレス', '非パーソナライズ'
   assert(privacy.includes(term), `Privacy disclosure missing: ${term}`);
 assert(!privacy.includes('データ収集を行いません'), 'Misleading blanket no-collection statement');
 
-for (const homepage of ['index.html', 'ja/index.html', 'en/index.html']) {
-  const home = await read(homepage);
-  assert(!home.includes('MATLABdojo') && !home.includes('MATLAB道場'), `Review app must not appear on ${homepage}`);
+for (const language of ['ja', 'en']) {
+  const home = await read(`${language}/index.html`);
+  const productURL = `/${language}/apps/MATLABdojo/`;
+  assert(home.includes(`class="app-card reveal" href="${productURL}"`), `App card missing from ${language} homepage`);
+  const submenu = home.match(/<div class="nav-submenu">([\s\S]*?)<\/div>/)?.[1] ?? '';
+  assert(submenu.includes(`href="${productURL}"`), `App navigation missing from ${language} homepage`);
 }
 const sitemap = await read('sitemap.xml');
-for (const languageBase of bases) assert(!sitemap.includes(languageBase), 'Review pages must not appear in the sitemap');
-// Inspect every public HTML page, including the English home page and legacy redirects.
-async function htmlFiles(directory = '') {
-  const files = [];
-  for (const entry of await fs.readdir(path.join(root, directory), { withFileTypes: true })) {
-    if (entry.name.startsWith('.') || entry.name === 'node_modules') continue;
-    const relative = path.posix.join(directory, entry.name);
-    if (entry.isDirectory()) files.push(...await htmlFiles(relative));
-    else if (entry.isFile() && entry.name.endsWith('.html')) files.push(relative);
-  }
-  return files;
+const sitemapURLs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
+assert.equal(new Set(sitemapURLs).size, sitemapURLs.length, 'Duplicate sitemap URL');
+for (const languageBase of bases) for (const suffix of ['', 'support/', 'privacy/']) {
+  const url = origin + languageBase + suffix;
+  assert(sitemapURLs.includes(url), `Published page missing from sitemap: ${url}`);
 }
-let unlinkedPages = 0;
-for (const file of await htmlFiles()) {
-  if (bases.some(languageBase => file.startsWith(languageBase.slice(1)))) continue;
-  const html = await read(file);
-  for (const [, raw] of html.matchAll(/\b(?:href|src|content)="([^"]+)"/g)) {
-    const target = new URL(raw.replaceAll('&amp;', '&'), origin + '/' + file);
-    assert(target.origin !== origin || !bases.some(languageBase => target.pathname.startsWith(languageBase)), `Public page links to review app: ${file} → ${raw}`);
-  }
-  unlinkedPages++;
-}
+const robots = await read('robots.txt');
+assert(robots.includes('Allow: /'), 'Public site must allow crawling');
+assert(!/Disallow:\s*\/.*MATLABdojo/i.test(robots), 'MATLAB Dojo blocked by robots.txt');
 const ads = await read('app-ads.txt');
 assert(ads.split(/\r?\n/).some(line => /^google\.com,\s*pub-7752394877381464,\s*DIRECT(?:,|$)/.test(line)), 'Wrong app-ads.txt publisher');
-console.log(`PASS: six Japanese/English review pages with noindex, reciprocal language links, six screenshots per product page, contact details, no inbound links from ${unlinkedPages} public HTML pages, no home/sitemap listings, app-ads.txt and ${references} internal references.`);
+console.log(`PASS: six indexable Japanese/English release pages, App Store links, reciprocal language links, six screenshots per product page, both homepage cards and menus, sitemap, app-ads.txt and ${references} internal references.`);
