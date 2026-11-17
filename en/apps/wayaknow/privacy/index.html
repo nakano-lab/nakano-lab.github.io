@@ -24,7 +24,7 @@
     <article class="document">
       <p class="breadcrumbs"><a href="/en/">Nakano Lab Software</a> / <a href="/en/apps/wayaknow/">wayaknow</a> / Privacy</p>
       <h1>Privacy<br>Policy</h1>
-      <p class="updated">Effective August 19, 2026 · Operator: Takashi Nakano</p>
+      <p class="updated">Effective November 18, 2026 · Operator: Takashi Nakano</p>
       <p>wayaknow (“the App”) respects your privacy. This policy explains the information the App handles and how it is processed.</p>
 
       <h2 id="collection">1. Data collected by the developer</h2>
@@ -32,7 +32,7 @@
       <p>The App has no user accounts, advertising SDKs, analytics SDKs, or third-party crash-analysis SDKs.</p>
 
       <h2 id="processing">2. Audio, transcripts, translations, and summaries</h2>
-      <p>The App processes microphone audio selected by the user for live transcription and translation. On macOS, when the user explicitly selects Mac System Audio, the App processes audio playing on the Mac for the same purpose.</p>
+      <p>The App processes microphone audio selected by the user for live transcription and translation. With Full Access, when the user explicitly selects System Audio, the App processes audio playing on Mac or on iPhone/iPad with iOS/iPadOS 27 or later for the same purpose.</p>
       <p>Audio processing, automatic language detection, transcription, translation, and user-requested summaries use frameworks and models that run on the device. The App does not send audio, transcripts, translations, or summaries to the developer’s servers.</p>
       <p>When the Apple Watch app is used, the paired iPhone sends the latest transcript, translation, and listening state to Apple Watch through Watch Connectivity provided by Apple. This connection does not use the developer’s servers. Speech recognition and translation run on iPhone, and original audio is not sent to Apple Watch.</p>
       <p>Speech-recognition models or translation languages provided by Apple may need to be downloaded on first use. Apple’s privacy policies apply to information handled by Apple services.</p>
@@ -40,14 +40,17 @@
       <h2 id="permissions">3. Microphone and speech-recognition permissions</h2>
       <p>The App requests microphone and speech-recognition access for live transcription. You can change or revoke these permissions at any time in Settings or System Settings. Revoking a permission makes the related input or transcription feature unavailable.</p>
 
-      <h2>4. Screen and system audio recording on macOS</h2>
-      <p>When Mac System Audio is used, the App requests macOS screen and system audio recording permission. The permission is used to transcribe audio playing on the Mac in real time. The App does not save screen video or send it to the developer’s servers.</p>
+      <h2>4. System Audio and screen-sharing permissions</h2>
+      <p>For System Audio on Mac, the App requests macOS screen and system audio recording permission. On iPhone/iPad with iOS/iPadOS 27 or later, audio is processed after the user selects the entire display in the OS picker and approves sharing.</p>
+      <p>These permissions are used to transcribe audio playing on the device in real time. The App does not save screen video or original audio or transmit either to the developer’s servers. You can stop capture from the App or the system sharing controls.</p>
 
       <h2>5. Camera</h2>
       <p>The iPhone and iPad app information contains a camera purpose string required by AVFoundation input-device APIs. The App does not capture, display, save, or transmit camera video.</p>
 
       <h2 id="files">6. Saving files</h2>
       <p>When you select Save, the App stores transcripts, translations, and generated summaries as a text file in the location you choose. You control the saved file. The App does not transmit it to the developer’s servers. Delete it yourself in Finder, Files, or another file manager.</p>
+
+      <p>Preferences such as input language, target language, translation mode, text sizes, selected terminology fields, and custom words are stored on your device. These settings and custom words are not sent to the developer’s servers. You can edit or delete custom words in Terminology Settings.</p>
 
       <h2>7. Sharing with third parties</h2>
       <p>Because the developer does not collect user data from the App, the developer does not sell, share, or disclose such data to third parties. If you choose to share a file created by the App, its handling is governed by your choices and the destination service.</p>
